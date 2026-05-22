@@ -5,10 +5,11 @@ import { QuickTips } from '@/components/home/QuickTips';
 
 export default async function HomePage() {
   const articles = await getAllArticles();
+  const featured = articles.length > 0 ? articles[0] : null;
 
   return (
     <>
-      <HeroSection />
+      <HeroSection featured={featured} />
       <ArticleGrid articles={articles} />
       <QuickTips />
     </>
