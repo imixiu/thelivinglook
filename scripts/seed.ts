@@ -45,7 +45,7 @@ async function seed() {
       await sql`
         INSERT INTO articles (
           id, slug, category, category_label, title, summary,
-          icon, icon_bg, read_time, likes, author, publish_date, body
+          icon, icon_bg, read_time, likes, author, publish_date, body, tag, is_online
         ) VALUES (
           ${article.id},
           ${article.slug},
@@ -59,7 +59,9 @@ async function seed() {
           ${article.likes},
           ${article.author},
           ${article.publishDate}::date,
-          ${article.body}
+          ${article.body},
+          ${article.tag || null},
+          ${article.is_online || 'Y'}
         )
       `;
       console.log(`✅ Inserted: ${article.title}`);

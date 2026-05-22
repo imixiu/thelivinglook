@@ -14,6 +14,8 @@ export interface Article {
   body: string; // HTML content
   createdAt?: string;
   updatedAt?: string;
+  tag: string | null;
+  isOnline: string;
 }
 
 export type Category = 'sourcing' | 'platforms' | 'logistics' | 'negotiation' | 'trends' | 'all';
@@ -31,4 +33,6 @@ export interface ArticlePreview {
   likes: string;
   author: string;
   publishDate: string;
+  tag: string | null;
+  isOnline: string;
 }
