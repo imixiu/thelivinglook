@@ -55,7 +55,7 @@ a { text-decoration: none; }
 }
 
 .hero-img {
-  background: url('/hero-bg.jpg') center/cover;
+  background: url('https://img.alicdn.com/imgextra/i2/O1CN01iviRWa1rO10RNerxa_!!6000000005620-0-tps-800-533.jpg') center/cover;
   min-height: 400px;
 }
 

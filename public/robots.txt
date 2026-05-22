@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /*.js$
-
-Sitemap: https://www.thelivinglook.com/sitemap.xml
