@@ -9,29 +9,30 @@ function formatDate(date: any): string {
   return String(date);
 }
 
-// 获取所有文章（首页用）- 只显示英文文章
+// 获取所有文章（首页用）- 只显示 is_online = 'Y' 的文章
 export async function getAllArticles(): Promise<ArticlePreview[]> {
   const rows = await query(`
     SELECT
-      id, slug, category, category_label, title, summary,
-      icon, icon_bg, read_time, likes, author, publish_date, tag, is_online
+      id, short_title as slug, type as category, title, description as summary,
+      img, author, published_time as publish_date, tag, is_online
     FROM articles
-    WHERE category IN ('sourcing', 'platforms', 'logistics', 'negotiation', 'trends')
+    WHERE site = 'thelivinglook'
       AND is_online = 'Y'
-    ORDER BY publish_date DESC
+    ORDER BY published_time DESC
+    LIMIT 50
   `);
 
   return rows.map((row: any) => ({
     id: row.id,
     slug: row.slug,
     category: row.category,
-    categoryLabel: row.category_label,
+    categoryLabel: row.category,
     title: row.title,
     summary: row.summary,
-    icon: row.icon,
-    iconBg: row.icon_bg,
-    readTime: row.read_time,
-    likes: row.likes,
+    icon: null,
+    iconBg: null,
+    readTime: 0,
+    likes: '',
     author: row.author,
     publishDate: formatDate(row.publish_date),
     tag: row.tag ?? null,
@@ -39,10 +40,10 @@ export async function getAllArticles(): Promise<ArticlePreview[]> {
   }));
 }
 
-// 根据分类和 slug 获取单篇文章
+// 根据分类和 slug 获取单篇文章 - 只返回 is_online = 'Y' 的文章
 export async function getArticle(category: string, slug: string): Promise<Article | null> {
   const rows = await query(
-    'SELECT * FROM articles WHERE category = $1 AND slug = $2 AND is_online = \'Y\' LIMIT 1',
+    'SELECT * FROM articles WHERE site = \'thelivinglook\' AND type = $1 AND short_title = $2 AND is_online = \'Y\' LIMIT 1',
     [category, slug]
   );
 
@@ -53,34 +54,34 @@ export async function getArticle(category: string, slug: string): Promise<Articl
   const row = rows[0];
   return {
     id: row.id,
-    slug: row.slug,
-    category: row.category,
-    categoryLabel: row.category_label,
+    slug: row.short_title,
+    category: row.type,
+    categoryLabel: row.type,
     title: row.title,
-    summary: row.summary,
-    icon: row.icon,
-    iconBg: row.icon_bg,
-    readTime: row.read_time,
-    likes: row.likes,
+    summary: row.description,
+    icon: null,
+    iconBg: null,
+    readTime: 0,
+    likes: '',
     author: row.author,
-    publishDate: formatDate(row.publish_date),
+    publishDate: formatDate(row.published_time),
     body: row.body,
-    createdAt: row.created_at ? formatDate(row.created_at) : undefined,
-    updatedAt: row.updated_at ? formatDate(row.updated_at) : undefined,
+    createdAt: row.published_time ? formatDate(row.published_time) : undefined,
+    updatedAt: row.modified_time ? formatDate(row.modified_time) : undefined,
     tag: row.tag ?? null,
     isOnline: row.is_online ?? "Y",
   };
 }
 
-// 获取相关文章（同分类，排除当前文章）
+// 获取相关文章（同分类，排除当前文章）- 只返回 is_online = 'Y' 的文章
 export async function getRelatedArticles(category: string, excludeId: string): Promise<ArticlePreview[]> {
   const rows = await query(
     `SELECT
-      id, slug, category, category_label, title, summary,
-      icon, icon_bg, read_time, likes, author, publish_date, tag, is_online
+      id, short_title as slug, type as category, title, description as summary,
+      img, author, published_time as publish_date, tag, is_online
     FROM articles
-    WHERE category = $1 AND id != $2 AND is_online = 'Y'
-    ORDER BY publish_date DESC
+    WHERE site = 'thelivinglook' AND type = $1 AND id != $2 AND is_online = 'Y'
+    ORDER BY published_time DESC
     LIMIT 3`,
     [category, excludeId]
   );
@@ -89,13 +90,44 @@ export async function getRelatedArticles(category: string, excludeId: string): P
     id: row.id,
     slug: row.slug,
     category: row.category,
-    categoryLabel: row.category_label,
+    categoryLabel: row.category,
     title: row.title,
     summary: row.summary,
-    icon: row.icon,
-    iconBg: row.icon_bg,
-    readTime: row.read_time,
-    likes: row.likes,
+    icon: null,
+    iconBg: null,
+    readTime: 0,
+    likes: '',
+    author: row.author,
+    publishDate: formatDate(row.publish_date),
+    tag: row.tag ?? null,
+    isOnline: row.is_online ?? "Y",
+  }));
+}
+
+// 按分类获取文章列表（category page 用）
+export async function getArticlesByType(type: string): Promise<ArticlePreview[]> {
+  const rows = await query(
+    `SELECT
+      id, short_title as slug, type as category, title, description as summary,
+      img, author, published_time as publish_date, tag, is_online
+    FROM articles
+    WHERE site = 'thelivinglook' AND type = $1 AND is_online = 'Y'
+    ORDER BY published_time DESC
+    LIMIT 50`,
+    [type]
+  );
+
+  return rows.map((row: any) => ({
+    id: row.id,
+    slug: row.slug,
+    category: row.category,
+    categoryLabel: row.category,
+    title: row.title,
+    summary: row.summary,
+    icon: null,
+    iconBg: null,
+    readTime: 0,
+    likes: '',
     author: row.author,
     publishDate: formatDate(row.publish_date),
     tag: row.tag ?? null,
