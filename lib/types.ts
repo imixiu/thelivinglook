@@ -1,1 +1,27 @@
-{"data":"ZXhwb3J0IGludGVyZmFjZSBBcnRpY2xlIHsKICBpZDogbnVtYmVyOwogIHNsdWc6IHN0cmluZzsKICBzaXRlOiBzdHJpbmc7CiAgdHlwZTogc3RyaW5nOwogIHRpdGxlOiBzdHJpbmc7CiAgZGVzY3JpcHRpb246IHN0cmluZzsKICBpbWc6IHN0cmluZyB8IG51bGw7CiAgYXV0aG9yOiBzdHJpbmcgfCBudWxsOwogIHB1Ymxpc2hEYXRlOiBzdHJpbmcgfCBudWxsOwogIGJvZHk6IHN0cmluZzsKICB1cmw6IHN0cmluZyB8IG51bGw7CiAgbGFuZ3VhZ2U6IHN0cmluZyB8IG51bGw7CiAgdXBkYXRlZEF0Pzogc3RyaW5nOwp9CgpleHBvcnQgaW50ZXJmYWNlIEFydGljbGVQcmV2aWV3IHsKICBpZDogbnVtYmVyOwogIHNsdWc6IHN0cmluZzsKICBzaXRlOiBzdHJpbmc7CiAgdHlwZTogc3RyaW5nOwogIHRpdGxlOiBzdHJpbmc7CiAgZGVzY3JpcHRpb246IHN0cmluZzsKICBpbWc6IHN0cmluZyB8IG51bGw7CiAgYXV0aG9yOiBzdHJpbmcgfCBudWxsOwogIHB1Ymxpc2hEYXRlOiBzdHJpbmcgfCBudWxsOwp9Cg=="}
+export interface Article {
+  id: number;
+  slug: string;
+  site: string;
+  type: string;
+  title: string;
+  description: string;
+  img: string | null;
+  author: string | null;
+  publishDate: string | null;
+  body: string;
+  url: string | null;
+  language: string | null;
+  updatedAt?: string;
+}
+
+export interface ArticlePreview {
+  id: number;
+  slug: string;
+  site: string;
+  type: string;
+  title: string;
+  description: string;
+  img: string | null;
+  author: string | null;
+  publishDate: string | null;
+}

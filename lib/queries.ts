@@ -1,1 +1,118 @@
-{"data":"aW1wb3J0IHsgcXVlcnkgfSBmcm9tICcuL2RiJzsKaW1wb3J0IHsgQXJ0aWNsZSwgQXJ0aWNsZVByZXZpZXcgfSBmcm9tICcuL3R5cGVzJzsKCmZ1bmN0aW9uIGZvcm1hdERhdGUoZGF0ZTogYW55KTogc3RyaW5nIHwgbnVsbCB7CiAgaWYgKCFkYXRlKSByZXR1cm4gbnVsbDsKICBpZiAoZGF0ZSBpbnN0YW5jZW9mIERhdGUpIHsKICAgIHJldHVybiBkYXRlLnRvSVNPU3RyaW5nKCkuc3BsaXQoJ1QnKVswXTsKICB9CiAgcmV0dXJuIFN0cmluZyhkYXRlKS5zcGxpdCgnVCcpWzBdOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0RmVhdHVyZWRBcnRpY2xlKCk6IFByb21pc2U8QXJ0aWNsZVByZXZpZXcgfCBudWxsPiB7CiAgY29uc3Qgcm93cyA9IGF3YWl0IHF1ZXJ5KAogICAgYFNFTEVDVCBpZCwgc2hvcnRfdGl0bGUsIHNpdGUsIHR5cGUsIHRpdGxlLCBkZXNjcmlwdGlvbiwgaW1nLCBhdXRob3IsIHB1Ymxpc2hlZF90aW1lCiAgICBGUk9NIGFydGljbGVzCiAgICBXSEVSRSBzaG9ydF90aXRsZSA9ICQxIExJTUlUIDFgLAogICAgWyd2aW5lZ2FyLXZzLWNvbW1lcmNpYWwtY2xlYW5lcnMtdGhlLXJlYWwtcmVzdWx0cyddCiAgKTsKICBpZiAocm93cy5sZW5ndGggPT09IDApIHJldHVybiBudWxsOwogIGNvbnN0IHJvdyA9IHJvd3NbMF07CiAgcmV0dXJuIHsKICAgIGlkOiByb3cuaWQsIHNsdWc6IHJvdy5zaG9ydF90aXRsZSwgc2l0ZTogcm93LnNpdGUsIHR5cGU6IHJvdy50eXBlLAogICAgdGl0bGU6IHJvdy50aXRsZSwgZGVzY3JpcHRpb246IHJvdy5kZXNjcmlwdGlvbiwgaW1nOiByb3cuaW1nLAogICAgYXV0aG9yOiByb3cuYXV0aG9yLCBwdWJsaXNoRGF0ZTogZm9ybWF0RGF0ZShyb3cucHVibGlzaGVkX3RpbWUpLAogIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRBbGxBcnRpY2xlcygpOiBQcm9taXNlPEFydGljbGVQcmV2aWV3W10+IHsKICBjb25zdCByb3dzID0gYXdhaXQgcXVlcnkoYAogICAgU0VMRUNUIGlkLCBzaG9ydF90aXRsZSwgc2l0ZSwgdHlwZSwgdGl0bGUsIGRlc2NyaXB0aW9uLCBpbWcsIGF1dGhvciwgcHVibGlzaGVkX3RpbWUKICAgIEZST00gYXJ0aWNsZXMKICAgIFdIRVJFIGltZyBJUyBOT1QgTlVMTCBBTkQgc2l0ZSA9ICd0aGVsaXZpbmdsb29rJwogICAgT1JERVIgQlkgcHVibGlzaGVkX3RpbWUgREVTQwogIGApOwoKICByZXR1cm4gcm93cy5tYXAoKHJvdzogYW55KSA9PiAoewogICAgaWQ6IHJvdy5pZCwKICAgIHNsdWc6IHJvdy5zaG9ydF90aXRsZSwKICAgIHNpdGU6IHJvdy5zaXRlLAogICAgdHlwZTogcm93LnR5cGUsCiAgICB0aXRsZTogcm93LnRpdGxlLAogICAgZGVzY3JpcHRpb246IHJvdy5kZXNjcmlwdGlvbiwKICAgIGltZzogcm93LmltZywKICAgIGF1dGhvcjogcm93LmF1dGhvciwKICAgIHB1Ymxpc2hEYXRlOiBmb3JtYXREYXRlKHJvdy5wdWJsaXNoZWRfdGltZSksCiAgfSkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QXJ0aWNsZSh0eXBlOiBzdHJpbmcsIHNsdWc6IHN0cmluZyk6IFByb21pc2U8QXJ0aWNsZSB8IG51bGw+IHsKICBjb25zdCByb3dzID0gYXdhaXQgcXVlcnkoCiAgICAnU0VMRUNUICogRlJPTSBhcnRpY2xlcyBXSEVSRSB0eXBlID0gJDEgQU5EIHNob3J0X3RpdGxlID0gJDIgTElNSVQgMScsCiAgICBbdHlwZSwgc2x1Z10KICApOwoKICBpZiAocm93cy5sZW5ndGggPT09IDApIHsKICAgIHJldHVybiBudWxsOwogIH0KCiAgY29uc3Qgcm93ID0gcm93c1swXTsKICByZXR1cm4gewogICAgaWQ6IHJvdy5pZCwKICAgIHNsdWc6IHJvdy5zaG9ydF90aXRsZSwKICAgIHNpdGU6IHJvdy5zaXRlLAogICAgdHlwZTogcm93LnR5cGUsCiAgICB0aXRsZTogcm93LnRpdGxlLAogICAgZGVzY3JpcHRpb246IHJvdy5kZXNjcmlwdGlvbiwKICAgIGltZzogcm93LmltZywKICAgIGF1dGhvcjogcm93LmF1dGhvciwKICAgIHB1Ymxpc2hEYXRlOiBmb3JtYXREYXRlKHJvdy5wdWJsaXNoZWRfdGltZSksCiAgICBib2R5OiByb3cuYm9keSwKICAgIHVybDogcm93LnVybCwKICAgIGxhbmd1YWdlOiByb3cubGFuZ3VhZ2UsCiAgICB1cGRhdGVkQXQ6IHJvdy5tb2RpZmllZF90aW1lID8gZm9ybWF0RGF0ZShyb3cubW9kaWZpZWRfdGltZSkgPz8gdW5kZWZpbmVkIDogdW5kZWZpbmVkLAogIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRBcnRpY2xlc0J5VHlwZSh0eXBlOiBzdHJpbmcsIHBhZ2UgPSAxLCBwYWdlU2l6ZSA9IDI0KTogUHJvbWlzZTx7IGFydGljbGVzOiBBcnRpY2xlUHJldmlld1tdOyB0b3RhbDogbnVtYmVyIH0+IHsKICBjb25zdCBvZmZzZXQgPSAocGFnZSAtIDEpICogcGFnZVNpemU7CiAgY29uc3QgW3Jvd3MsIGNvdW50Um93c10gPSBhd2FpdCBQcm9taXNlLmFsbChbCiAgICBxdWVyeSgKICAgICAgYFNFTEVDVCBpZCwgc2hvcnRfdGl0bGUsIHNpdGUsIHR5cGUsIHRpdGxlLCBkZXNjcmlwdGlvbiwgaW1nLCBhdXRob3IsIHB1Ymxpc2hlZF90aW1lCiAgICAgIEZST00gYXJ0aWNsZXMgV0hFUkUgdHlwZSA9ICQxIEFORCBzaXRlID0gJ3RoZWxpdmluZ2xvb2snIE9SREVSIEJZIHB1Ymxpc2hlZF90aW1lIERFU0MgTElNSVQgJDIgT0ZGU0VUICQzYCwKICAgICAgW3R5cGUsIHBhZ2VTaXplLCBvZmZzZXRdCiAgICApLAogICAgcXVlcnkoYFNFTEVDVCBDT1VOVCgqKSBhcyB0b3RhbCBGUk9NIGFydGljbGVzIFdIRVJFIHR5cGUgPSAkMSBBTkQgc2l0ZSA9ICd0aGVsaXZpbmdsb29rJ2AsIFt0eXBlXSksCiAgXSk7CiAgcmV0dXJuIHsKICAgIGFydGljbGVzOiByb3dzLm1hcCgocm93OiBhbnkpID0+ICh7CiAgICAgIGlkOiByb3cuaWQsIHNsdWc6IHJvdy5zaG9ydF90aXRsZSwgc2l0ZTogcm93LnNpdGUsIHR5cGU6IHJvdy50eXBlLAogICAgICB0aXRsZTogcm93LnRpdGxlLCBkZXNjcmlwdGlvbjogcm93LmRlc2NyaXB0aW9uLCBpbWc6IHJvdy5pbWcsCiAgICAgIGF1dGhvcjogcm93LmF1dGhvciwgcHVibGlzaERhdGU6IGZvcm1hdERhdGUocm93LnB1Ymxpc2hlZF90aW1lKSwKICAgIH0pKSwKICAgIHRvdGFsOiBwYXJzZUludChjb3VudFJvd3NbMF0udG90YWwpLAogIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRSZWxhdGVkQXJ0aWNsZXModHlwZTogc3RyaW5nLCBleGNsdWRlSWQ6IG51bWJlcik6IFByb21pc2U8QXJ0aWNsZVByZXZpZXdbXT4gewogIGNvbnN0IHJvd3MgPSBhd2FpdCBxdWVyeSgKICAgIGBTRUxFQ1QgaWQsIHNob3J0X3RpdGxlLCBzaXRlLCB0eXBlLCB0aXRsZSwgZGVzY3JpcHRpb24sIGltZywgYXV0aG9yLCBwdWJsaXNoZWRfdGltZQogICAgRlJPTSBhcnRpY2xlcwogICAgV0hFUkUgdHlwZSA9ICQxIEFORCBpZCAhPSAkMiBBTkQgc2l0ZSA9ICd0aGVsaXZpbmdsb29rJwogICAgT1JERVIgQlkgcHVibGlzaGVkX3RpbWUgREVTQwogICAgTElNSVQgM2AsCiAgICBbdHlwZSwgZXhjbHVkZUlkXQogICk7CgogIHJldHVybiByb3dzLm1hcCgocm93OiBhbnkpID0+ICh7CiAgICBpZDogcm93LmlkLAogICAgc2x1Zzogcm93LnNob3J0X3RpdGxlLAogICAgc2l0ZTogcm93LnNpdGUsCiAgICB0eXBlOiByb3cudHlwZSwKICAgIHRpdGxlOiByb3cudGl0bGUsCiAgICBkZXNjcmlwdGlvbjogcm93LmRlc2NyaXB0aW9uLAogICAgaW1nOiByb3cuaW1nLAogICAgYXV0aG9yOiByb3cuYXV0aG9yLAogICAgcHVibGlzaERhdGU6IGZvcm1hdERhdGUocm93LnB1Ymxpc2hlZF90aW1lKSwKICB9KSk7Cn0K"}
+import { query } from './db';
+import { Article, ArticlePreview } from './types';
+
+function formatDate(date: any): string | null {
+  if (!date) return null;
+  if (date instanceof Date) {
+    return date.toISOString().split('T')[0];
+  }
+  return String(date).split('T')[0];
+}
+
+export async function getFeaturedArticle(): Promise<ArticlePreview | null> {
+  const rows = await query(
+    `SELECT id, short_title, site, type, title, description, img, author, published_time
+    FROM articles
+    WHERE short_title = $1 LIMIT 1`,
+    ['vinegar-vs-commercial-cleaners-the-real-results']
+  );
+  if (rows.length === 0) return null;
+  const row = rows[0];
+  return {
+    id: row.id, slug: row.short_title, site: row.site, type: row.type,
+    title: row.title, description: row.description, img: row.img,
+    author: row.author, publishDate: formatDate(row.published_time),
+  };
+}
+
+export async function getAllArticles(): Promise<ArticlePreview[]> {
+  const rows = await query(`
+    SELECT id, short_title, site, type, title, description, img, author, published_time
+    FROM articles
+    WHERE img IS NOT NULL AND site = 'thelivinglook'
+    ORDER BY published_time DESC
+  `);
+
+  return rows.map((row: any) => ({
+    id: row.id,
+    slug: row.short_title,
+    site: row.site,
+    type: row.type,
+    title: row.title,
+    description: row.description,
+    img: row.img,
+    author: row.author,
+    publishDate: formatDate(row.published_time),
+  }));
+}
+
+export async function getArticle(type: string, slug: string): Promise<Article | null> {
+  const rows = await query(
+    'SELECT * FROM articles WHERE type = $1 AND short_title = $2 LIMIT 1',
+    [type, slug]
+  );
+
+  if (rows.length === 0) {
+    return null;
+  }
+
+  const row = rows[0];
+  return {
+    id: row.id,
+    slug: row.short_title,
+    site: row.site,
+    type: row.type,
+    title: row.title,
+    description: row.description,
+    img: row.img,
+    author: row.author,
+    publishDate: formatDate(row.published_time),
+    body: row.body,
+    url: row.url,
+    language: row.language,
+    updatedAt: row.modified_time ? formatDate(row.modified_time) ?? undefined : undefined,
+  };
+}
+
+export async function getArticlesByType(type: string, page = 1, pageSize = 24): Promise<{ articles: ArticlePreview[]; total: number }> {
+  const offset = (page - 1) * pageSize;
+  const [rows, countRows] = await Promise.all([
+    query(
+      `SELECT id, short_title, site, type, title, description, img, author, published_time
+      FROM articles WHERE type = $1 AND site = 'thelivinglook' ORDER BY published_time DESC LIMIT $2 OFFSET $3`,
+      [type, pageSize, offset]
+    ),
+    query(`SELECT COUNT(*) as total FROM articles WHERE type = $1 AND site = 'thelivinglook'`, [type]),
+  ]);
+  return {
+    articles: rows.map((row: any) => ({
+      id: row.id, slug: row.short_title, site: row.site, type: row.type,
+      title: row.title, description: row.description, img: row.img,
+      author: row.author, publishDate: formatDate(row.published_time),
+    })),
+    total: parseInt(countRows[0].total),
+  };
+}
+
+export async function getRelatedArticles(type: string, excludeId: number): Promise<ArticlePreview[]> {
+  const rows = await query(
+    `SELECT id, short_title, site, type, title, description, img, author, published_time
+    FROM articles
+    WHERE type = $1 AND id != $2 AND site = 'thelivinglook'
+    ORDER BY published_time DESC
+    LIMIT 3`,
+    [type, excludeId]
+  );
+
+  return rows.map((row: any) => ({
+    id: row.id,
+    slug: row.short_title,
+    site: row.site,
+    type: row.type,
+    title: row.title,
+    description: row.description,
+    img: row.img,
+    author: row.author,
+    publishDate: formatDate(row.published_time),
+  }));
+}

@@ -1,1 +1,28 @@
-{"data":"Y29uc3QgeyBQb29sIH0gPSByZXF1aXJlKCdwZycpOwpjb25zdCB1cmwgPSBwcm9jZXNzLmVudi5EQVRBQkFTRV9VUkwgfHwgcHJvY2Vzcy5lbnYuUE9TVEdSRVNfVVJMOwpjb25zdCBwb29sID0gbmV3IFBvb2woeyBjb25uZWN0aW9uU3RyaW5nOiB1cmwsIHN0YXRlbWVudF90aW1lb3V0OiAxMDAwMCwgc3NsOiB7IHJlamVjdFVuYXV0aG9yaXplZDogZmFsc2UgfSB9KTsKCmFzeW5jIGZ1bmN0aW9uIG1haW4oKSB7CiAgdHJ5IHsKICAgIGNvbnN0IHRvdGFsID0gYXdhaXQgcG9vbC5xdWVyeSgiU0VMRUNUIENPVU5UKCopIGFzIGNudCBGUk9NIGFydGljbGVzIFdIRVJFIHNpdGUgPSAndGhlbGl2aW5nbG9vayciKTsKICAgIGNvbnNvbGUubG9nKCdUT1RBTDonLCB0b3RhbC5yb3dzWzBdLmNudCk7CgogICAgY29uc3QgbGFzdDcgPSBhd2FpdCBwb29sLnF1ZXJ5KCJTRUxFQ1QgQ09VTlQoKikgYXMgY250IEZST00gYXJ0aWNsZXMgV0hFUkUgc2l0ZSA9ICd0aGVsaXZpbmdsb29rJyBBTkQgcHVibGlzaGVkX3RpbWUgPj0gTk9XKCkgLSBJTlRFUlZBTCAnNyBkYXlzJyIpOwogICAgY29uc29sZS5sb2coJ0xBU1RfN19EQVlTOicsIGxhc3Q3LnJvd3NbMF0uY250KTsKCiAgICBjb25zdCBieVR5cGUgPSBhd2FpdCBwb29sLnF1ZXJ5KCJTRUxFQ1QgdHlwZSwgQ09VTlQoKikgYXMgY250IEZST00gYXJ0aWNsZXMgV0hFUkUgc2l0ZSA9ICd0aGVsaXZpbmdsb29rJyBHUk9VUCBCWSB0eXBlIE9SREVSIEJZIGNudCBERVNDIik7CiAgICBjb25zb2xlLmxvZygnQllfVFlQRTonLCBKU09OLnN0cmluZ2lmeShieVR5cGUucm93cykpOwoKICAgIGNvbnN0IHJlY2VudCA9IGF3YWl0IHBvb2wucXVlcnkoIlNFTEVDVCBzaG9ydF90aXRsZSwgcHVibGlzaGVkX3RpbWUsIHR5cGUgRlJPTSBhcnRpY2xlcyBXSEVSRSBzaXRlID0gJ3RoZWxpdmluZ2xvb2snIE9SREVSIEJZIHB1Ymxpc2hlZF90aW1lIERFU0MgTElNSVQgNSIpOwogICAgY29uc29sZS5sb2coJ1JFQ0VOVF81OicsIEpTT04uc3RyaW5naWZ5KHJlY2VudC5yb3dzKSk7CgogICAgY29uc3QgYnlMYW5nID0gYXdhaXQgcG9vbC5xdWVyeSgiU0VMRUNUIGxhbmd1YWdlLCBDT1VOVCgqKSBhcyBjbnQgRlJPTSBhcnRpY2xlcyBXSEVSRSBzaXRlID0gJ3RoZWxpdmluZ2xvb2snIEdST1VQIEJZIGxhbmd1YWdlIE9SREVSIEJZIGNudCBERVNDIik7CiAgICBjb25zb2xlLmxvZygnQllfTEFORzonLCBKU09OLnN0cmluZ2lmeShieUxhbmcucm93cykpOwogIH0gY2F0Y2ggKGUpIHsKICAgIGNvbnNvbGUuZXJyb3IoZS5tZXNzYWdlKTsKICB9IGZpbmFsbHkgewogICAgcG9vbC5lbmQoKTsKICB9Cn0KCm1haW4oKTsK"}
+const { Pool } = require('pg');
+const url = process.env.DATABASE_URL || process.env.POSTGRES_URL;
+const pool = new Pool({ connectionString: url, statement_timeout: 10000, ssl: { rejectUnauthorized: false } });
+
+async function main() {
+  try {
+    const total = await pool.query("SELECT COUNT(*) as cnt FROM articles WHERE site = 'thelivinglook'");
+    console.log('TOTAL:', total.rows[0].cnt);
+
+    const last7 = await pool.query("SELECT COUNT(*) as cnt FROM articles WHERE site = 'thelivinglook' AND published_time >= NOW() - INTERVAL '7 days'");
+    console.log('LAST_7_DAYS:', last7.rows[0].cnt);
+
+    const byType = await pool.query("SELECT type, COUNT(*) as cnt FROM articles WHERE site = 'thelivinglook' GROUP BY type ORDER BY cnt DESC");
+    console.log('BY_TYPE:', JSON.stringify(byType.rows));
+
+    const recent = await pool.query("SELECT short_title, published_time, type FROM articles WHERE site = 'thelivinglook' ORDER BY published_time DESC LIMIT 5");
+    console.log('RECENT_5:', JSON.stringify(recent.rows));
+
+    const byLang = await pool.query("SELECT language, COUNT(*) as cnt FROM articles WHERE site = 'thelivinglook' GROUP BY language ORDER BY cnt DESC");
+    console.log('BY_LANG:', JSON.stringify(byLang.rows));
+  } catch (e) {
+    console.error(e.message);
+  } finally {
+    pool.end();
+  }
+}
+
+main();

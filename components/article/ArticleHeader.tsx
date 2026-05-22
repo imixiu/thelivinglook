@@ -1,1 +1,30 @@
-{"data":"aW1wb3J0IHsgQXJ0aWNsZSB9IGZyb20gJ0AvbGliL3R5cGVzJzsKCmludGVyZmFjZSBBcnRpY2xlSGVhZGVyUHJvcHMgewogIGFydGljbGU6IEFydGljbGU7Cn0KCmV4cG9ydCBmdW5jdGlvbiBBcnRpY2xlSGVhZGVyKHsgYXJ0aWNsZSB9OiBBcnRpY2xlSGVhZGVyUHJvcHMpIHsKICBjb25zdCBmb3JtYXREaXNwbGF5RGF0ZSA9IChkYXRlU3RyOiBzdHJpbmcgfCBudWxsKSA9PiB7CiAgICBpZiAoIWRhdGVTdHIpIHJldHVybiBudWxsOwogICAgY29uc3QgZCA9IG5ldyBEYXRlKGRhdGVTdHIpOwogICAgcmV0dXJuIGQudG9Mb2NhbGVEYXRlU3RyaW5nKCdlbi1HQicsIHsgZGF5OiAnMi1kaWdpdCcsIG1vbnRoOiAnbG9uZycsIHllYXI6ICdudW1lcmljJyB9KTsKICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImFydGljbGUtaGVhZGVyIj4KICAgICAgPGgxPnthcnRpY2xlLnRpdGxlfTwvaDE+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJhcnRpY2xlLW1ldGEiPgogICAgICAgIHthcnRpY2xlLnB1Ymxpc2hEYXRlICYmICgKICAgICAgICAgIDx0aW1lIGNsYXNzTmFtZT0iZGF0ZSI+e2Zvcm1hdERpc3BsYXlEYXRlKGFydGljbGUucHVibGlzaERhdGUpfTwvdGltZT4KICAgICAgICApfQogICAgICAgIHthcnRpY2xlLmF1dGhvciAmJiAoCiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImNhdGVnb3J5Ij5CeSB7YXJ0aWNsZS5hdXRob3J9PC9zcGFuPgogICAgICAgICl9CiAgICAgIDwvZGl2PgogICAgICB7YXJ0aWNsZS5pbWcgJiYgKAogICAgICAgIDxpbWcgc3JjPXthcnRpY2xlLmltZ30gYWx0PXthcnRpY2xlLnRpdGxlfSAvPgogICAgICApfQogICAgPC9kaXY+CiAgKTsKfQo="}
+import { Article } from '@/lib/types';
+
+interface ArticleHeaderProps {
+  article: Article;
+}
+
+export function ArticleHeader({ article }: ArticleHeaderProps) {
+  const formatDisplayDate = (dateStr: string | null) => {
+    if (!dateStr) return null;
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' });
+  };
+
+  return (
+    <div className="article-header">
+      <h1>{article.title}</h1>
+      <div className="article-meta">
+        {article.publishDate && (
+          <time className="date">{formatDisplayDate(article.publishDate)}</time>
+        )}
+        {article.author && (
+          <span className="category">By {article.author}</span>
+        )}
+      </div>
+      {article.img && (
+        <img src={article.img} alt={article.title} />
+      )}
+    </div>
+  );
+}

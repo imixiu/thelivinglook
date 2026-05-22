@@ -1,1 +1,14 @@
-{"data":"aW1wb3J0IHR5cGUgeyBOZXh0Q29uZmlnIH0gZnJvbSAibmV4dCI7Cgpjb25zdCBuZXh0Q29uZmlnOiBOZXh0Q29uZmlnID0gewogIGltYWdlczogewogICAgcmVtb3RlUGF0dGVybnM6IFsKICAgICAgewogICAgICAgIHByb3RvY29sOiAnaHR0cHMnLAogICAgICAgIGhvc3RuYW1lOiAnaW1nLmFsaWNkbi5jb20nLAogICAgICB9LAogICAgXSwKICB9LAp9OwoKZXhwb3J0IGRlZmF1bHQgbmV4dENvbmZpZzsK"}
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.alicdn.com',
+      },
+    ],
+  },
+};
+
+export default nextConfig;

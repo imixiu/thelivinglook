@@ -1,1 +1,74 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7Cgpjb25zdCBOQVZfTElOS1MgPSBbCiAgeyBsYWJlbDogJ0tpdGNoZW4nLCBocmVmOiAnL2tpdGNoZW4taGFja3MnIH0sCiAgeyBsYWJlbDogJ09yZ2FuaXphdGlvbicsIGhyZWY6ICcvY2xvc2V0LW9yZ2FuaXphdGlvbicgfSwKICB7IGxhYmVsOiAnQ2xlYW5pbmcnLCBocmVmOiAnL2Vjby1jbGVhbmluZycgfSwKICB7IGxhYmVsOiAnUGxhbnQgQ2FyZScsIGhyZWY6ICcvcGxhbnQtY2FyZScgfSwKICB7IGxhYmVsOiAnVGVjaCcsIGhyZWY6ICcvdGVjaC1lZmZpY2llbmN5JyB9LApdOwoKZXhwb3J0IGZ1bmN0aW9uIEhlYWRlcigpIHsKICBjb25zdCBbb3Blbiwgc2V0T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CgogIHJldHVybiAoCiAgICA8aGVhZGVyIHN0eWxlPXt7CiAgICAgIGJvcmRlckJvdHRvbTogJzFweCBzb2xpZCAjZWVlJywKICAgICAgcGFkZGluZzogJzFyZW0gNSUnLAogICAgICBkaXNwbGF5OiAnZmxleCcsCiAgICAgIGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicsCiAgICAgIGFsaWduSXRlbXM6ICdjZW50ZXInLAogICAgICBwb3NpdGlvbjogJ3N0aWNreScsCiAgICAgIHRvcDogMCwKICAgICAgYmFja2dyb3VuZDogJ3doaXRlJywKICAgICAgekluZGV4OiAxMDAwLAogICAgICBmbGV4V3JhcDogJ3dyYXAnLAogICAgICBnYXA6ICcxMHB4JywKICAgIH19PgogICAgICA8TGluayBocmVmPSIvIiBzdHlsZT17eyBmb250U2l6ZTogJzEuNXJlbScsIGZvbnRXZWlnaHQ6ICdib2xkJywgY29sb3I6ICcjMDBhOGE4JywgdGV4dERlY29yYXRpb246ICdub25lJyB9fT4KICAgICAgICBUaGVMaXZpbmdMb29rPHNwYW4gc3R5bGU9e3sgY29sb3I6ICcjZmY2YTAwJyB9fT4uPC9zcGFuPgogICAgICA8L0xpbms+CgogICAgICB7LyogRGVza3RvcCBuYXYgKi99CiAgICAgIDxuYXYgY2xhc3NOYW1lPSJoZWFkZXItbmF2LWRlc2t0b3AiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZ2FwOiAnMjBweCcgfX0+CiAgICAgICAge05BVl9MSU5LUy5tYXAoKHsgbGFiZWwsIGhyZWYgfSkgPT4gKAogICAgICAgICAgPExpbmsga2V5PXtocmVmfSBocmVmPXtocmVmfSBzdHlsZT17eyB0ZXh0RGVjb3JhdGlvbjogJ25vbmUnLCBjb2xvcjogJyM2NjYnLCBmb250V2VpZ2h0OiA1MDAgfX0+e2xhYmVsfTwvTGluaz4KICAgICAgICApKX0KICAgICAgPC9uYXY+CgogICAgICB7LyogTW9iaWxlIGhhbWJ1cmdlciAqL30KICAgICAgPGJ1dHRvbgogICAgICAgIGNsYXNzTmFtZT0iaGVhZGVyLWhhbWJ1cmdlciIKICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKG8gPT4gIW8pfQogICAgICAgIGFyaWEtbGFiZWw9IlRvZ2dsZSBtZW51IgogICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6ICdub25lJywgYm9yZGVyOiAnbm9uZScsIGN1cnNvcjogJ3BvaW50ZXInLCBwYWRkaW5nOiAnNHB4JywgZGlzcGxheTogJ25vbmUnIH19CiAgICAgID4KICAgICAgICA8c3BhbiBzdHlsZT17eyBkaXNwbGF5OiAnYmxvY2snLCB3aWR0aDogMjQsIGhlaWdodDogMiwgYmFja2dyb3VuZDogJyMzMzMnLCBtYXJnaW46ICc1cHggMCcgfX0gLz4KICAgICAgICA8c3BhbiBzdHlsZT17eyBkaXNwbGF5OiAnYmxvY2snLCB3aWR0aDogMjQsIGhlaWdodDogMiwgYmFja2dyb3VuZDogJyMzMzMnLCBtYXJnaW46ICc1cHggMCcgfX0gLz4KICAgICAgICA8c3BhbiBzdHlsZT17eyBkaXNwbGF5OiAnYmxvY2snLCB3aWR0aDogMjQsIGhlaWdodDogMiwgYmFja2dyb3VuZDogJyMzMzMnLCBtYXJnaW46ICc1cHggMCcgfX0gLz4KICAgICAgPC9idXR0b24+CgogICAgICB7LyogTW9iaWxlIGRyb3Bkb3duICovfQogICAgICB7b3BlbiAmJiAoCiAgICAgICAgPG5hdiBjbGFzc05hbWU9ImhlYWRlci1uYXYtbW9iaWxlIiBzdHlsZT17ewogICAgICAgICAgd2lkdGg6ICcxMDAlJywKICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLAogICAgICAgICAgZ2FwOiAnMCcsCiAgICAgICAgICBib3JkZXJUb3A6ICcxcHggc29saWQgI2VlZScsCiAgICAgICAgICBwYWRkaW5nVG9wOiAnOHB4JywKICAgICAgICB9fT4KICAgICAgICAgIHtOQVZfTElOS1MubWFwKCh7IGxhYmVsLCBocmVmIH0pID0+ICgKICAgICAgICAgICAgPExpbmsga2V5PXtocmVmfSBocmVmPXtocmVmfSBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKGZhbHNlKX0gc3R5bGU9e3sKICAgICAgICAgICAgICB0ZXh0RGVjb3JhdGlvbjogJ25vbmUnLCBjb2xvcjogJyMzMzMnLCBmb250V2VpZ2h0OiA1MDAsCiAgICAgICAgICAgICAgcGFkZGluZzogJzEwcHggMCcsIGJvcmRlckJvdHRvbTogJzFweCBzb2xpZCAjZjBmMGYwJywKICAgICAgICAgICAgfX0+e2xhYmVsfTwvTGluaz4KICAgICAgICAgICkpfQogICAgICAgIDwvbmF2PgogICAgICApfQogICAgPC9oZWFkZXI+CiAgKTsKfQo="}
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+
+const NAV_LINKS = [
+  { label: 'Kitchen', href: '/kitchen-hacks' },
+  { label: 'Organization', href: '/closet-organization' },
+  { label: 'Cleaning', href: '/eco-cleaning' },
+  { label: 'Plant Care', href: '/plant-care' },
+  { label: 'Tech', href: '/tech-efficiency' },
+];
+
+export function Header() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header style={{
+      borderBottom: '1px solid #eee',
+      padding: '1rem 5%',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      position: 'sticky',
+      top: 0,
+      background: 'white',
+      zIndex: 1000,
+      flexWrap: 'wrap',
+      gap: '10px',
+    }}>
+      <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#00a8a8', textDecoration: 'none' }}>
+        TheLivingLook<span style={{ color: '#ff6a00' }}>.</span>
+      </Link>
+
+      {/* Desktop nav */}
+      <nav className="header-nav-desktop" style={{ display: 'flex', gap: '20px' }}>
+        {NAV_LINKS.map(({ label, href }) => (
+          <Link key={href} href={href} style={{ textDecoration: 'none', color: '#666', fontWeight: 500 }}>{label}</Link>
+        ))}
+      </nav>
+
+      {/* Mobile hamburger */}
+      <button
+        className="header-hamburger"
+        onClick={() => setOpen(o => !o)}
+        aria-label="Toggle menu"
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px', display: 'none' }}
+      >
+        <span style={{ display: 'block', width: 24, height: 2, background: '#333', margin: '5px 0' }} />
+        <span style={{ display: 'block', width: 24, height: 2, background: '#333', margin: '5px 0' }} />
+        <span style={{ display: 'block', width: 24, height: 2, background: '#333', margin: '5px 0' }} />
+      </button>
+
+      {/* Mobile dropdown */}
+      {open && (
+        <nav className="header-nav-mobile" style={{
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0',
+          borderTop: '1px solid #eee',
+          paddingTop: '8px',
+        }}>
+          {NAV_LINKS.map(({ label, href }) => (
+            <Link key={href} href={href} onClick={() => setOpen(false)} style={{
+              textDecoration: 'none', color: '#333', fontWeight: 500,
+              padding: '10px 0', borderBottom: '1px solid #f0f0f0',
+            }}>{label}</Link>
+          ))}
+        </nav>
+      )}
+    </header>
+  );
+}

@@ -1,1 +1,59 @@
-{"data":"Ly8g5paH56ug5Yqo5oCB5Yqg6L296ISa5pysCmFzeW5jIGZ1bmN0aW9uIGxvYWRBcnRpY2xlKGFydGljbGVTbHVnLCBwYXRoUHJlZml4ID0gJycpIHsKICB0cnkgewogICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChwYXRoUHJlZml4ICsgJ2RhdGEvYXJ0aWNsZXMuanNvbicpOwogICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKICAgIGNvbnN0IGFydGljbGUgPSBkYXRhLmFydGljbGVzLmZpbmQoYSA9PiBhLnNsdWcgPT09IGFydGljbGVTbHVnKTsKCiAgICBpZiAoIWFydGljbGUpIHsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FydGljbGUtYm9keScpLmlubmVySFRNTCA9CiAgICAgICAgYDxwPuaWh+eroOacquaJvuWIsOOAgjxhIGhyZWY9IiR7cGF0aFByZWZpeH1pbmRleC5odG1sIj7ov5Tlm57pppbpobU8L2E+PC9wPmA7CiAgICAgIHJldHVybjsKICAgIH0KCiAgICAvLyDmm7TmlrDpobXpnaLmoIfpopjlkozlhYPkv6Hmga8KICAgIGRvY3VtZW50LnRpdGxlID0gYXJ0aWNsZS50aXRsZSArICcgLSDnlJ/mtLvlppnmi5snOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FydGljbGUtdGl0bGUnKS50ZXh0Q29udGVudCA9IGFydGljbGUudGl0bGU7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYXJ0aWNsZS10aXRsZS1icmVhZGNydW1iJykudGV4dENvbnRlbnQgPSBhcnRpY2xlLnRpdGxlOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2NhdGVnb3J5LWxpbmsnKS50ZXh0Q29udGVudCA9IGFydGljbGUuY2F0ZWdvcnlMYWJlbDsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhcnRpY2xlLWF1dGhvcicpLnRleHRDb250ZW50ID0gYXJ0aWNsZS5hdXRob3I7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHVibGlzaC1kYXRlJykudGV4dENvbnRlbnQgPSBhcnRpY2xlLnB1Ymxpc2hEYXRlOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3JlYWQtdGltZScpLnRleHRDb250ZW50ID0gYXJ0aWNsZS5yZWFkVGltZSArICcg5YiG6ZKfJzsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsaWtlcy1jb3VudCcpLnRleHRDb250ZW50ID0gYXJ0aWNsZS5saWtlczsKCiAgICAvLyDmj5LlhaXmlofnq6DmraPmlocgSFRNTAogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FydGljbGUtYm9keScpLmlubmVySFRNTCA9IGFydGljbGUuYm9keTsKCiAgICAvLyDliqDovb3nm7jlhbPmlofnq6AKICAgIGxvYWRSZWxhdGVkQXJ0aWNsZXMoZGF0YS5hcnRpY2xlcywgYXJ0aWNsZS5jYXRlZ29yeSwgYXJ0aWNsZS5pZCwgcGF0aFByZWZpeCk7CgogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCfliqDovb3mlofnq6DlpLHotKU6JywgZXJyb3IpOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FydGljbGUtYm9keScpLmlubmVySFRNTCA9CiAgICAgIGA8cD7liqDovb3lpLHotKXvvIzor7fnqI3lkI7ph43or5XjgII8YSBocmVmPSIke3BhdGhQcmVmaXh9aW5kZXguaHRtbCI+6L+U5Zue6aaW6aG1PC9hPjwvcD5gOwogIH0KfQoKZnVuY3Rpb24gbG9hZFJlbGF0ZWRBcnRpY2xlcyhhbGxBcnRpY2xlcywgY3VycmVudENhdGVnb3J5LCBjdXJyZW50SWQsIHBhdGhQcmVmaXggPSAnJykgewogIGNvbnN0IHJlbGF0ZWRBcnRpY2xlcyA9IGFsbEFydGljbGVzCiAgICAuZmlsdGVyKGEgPT4gYS5jYXRlZ29yeSA9PT0gY3VycmVudENhdGVnb3J5ICYmIGEuaWQgIT09IGN1cnJlbnRJZCkKICAgIC5zbGljZSgwLCAzKTsKCiAgY29uc3QgcmVsYXRlZENvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyZWxhdGVkLWFydGljbGVzJyk7CgogIGlmIChyZWxhdGVkQXJ0aWNsZXMubGVuZ3RoID09PSAwKSB7CiAgICByZWxhdGVkQ29udGFpbmVyLmlubmVySFRNTCA9ICc8cCBzdHlsZT0idGV4dC1hbGlnbjpjZW50ZXI7Y29sb3I6IzY2NjsiPuaaguaXoOebuOWFs+aWh+eroDwvcD4nOwogICAgcmV0dXJuOwogIH0KCiAgcmVsYXRlZENvbnRhaW5lci5pbm5lckhUTUwgPSByZWxhdGVkQXJ0aWNsZXMubWFwKGFydGljbGUgPT4gYAogICAgPGEgaHJlZj0iJHtwYXRoUHJlZml4fSR7YXJ0aWNsZS5jYXRlZ29yeX0vJHthcnRpY2xlLnNsdWd9Lmh0bWwiIGNsYXNzPSJyZWxhdGVkLWNhcmQiPgogICAgICA8ZGl2IHN0eWxlPSJkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2dhcDoxMnB4O21hcmdpbi1ib3R0b206OHB4OyI+CiAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxLjVyZW07Ij4ke2FydGljbGUuaWNvbn08L3NwYW4+CiAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTouNzVyZW07Y29sb3I6IzAwYThhODtmb250LXdlaWdodDo2MDA7Ij4ke2FydGljbGUuY2F0ZWdvcnlMYWJlbH08L3NwYW4+CiAgICAgIDwvZGl2PgogICAgICA8aDQ+JHthcnRpY2xlLnRpdGxlfTwvaDQ+CiAgICAgIDxwPiR7YXJ0aWNsZS5zdW1tYXJ5fTwvcD4KICAgIDwvYT4KICBgKS5qb2luKCcnKTsKfQ=="}
+// 文章动态加载脚本
+async function loadArticle(articleSlug, pathPrefix = '') {
+  try {
+    const response = await fetch(pathPrefix + 'data/articles.json');
+    const data = await response.json();
+    const article = data.articles.find(a => a.slug === articleSlug);
+
+    if (!article) {
+      document.getElementById('article-body').innerHTML =
+        `<p>文章未找到。<a href="${pathPrefix}index.html">返回首页</a></p>`;
+      return;
+    }
+
+    // 更新页面标题和元信息
+    document.title = article.title + ' - 生活妙招';
+    document.getElementById('article-title').textContent = article.title;
+    document.getElementById('article-title-breadcrumb').textContent = article.title;
+    document.getElementById('category-link').textContent = article.categoryLabel;
+    document.getElementById('article-author').textContent = article.author;
+    document.getElementById('publish-date').textContent = article.publishDate;
+    document.getElementById('read-time').textContent = article.readTime + ' 分钟';
+    document.getElementById('likes-count').textContent = article.likes;
+
+    // 插入文章正文 HTML
+    document.getElementById('article-body').innerHTML = article.body;
+
+    // 加载相关文章
+    loadRelatedArticles(data.articles, article.category, article.id, pathPrefix);
+
+  } catch (error) {
+    console.error('加载文章失败:', error);
+    document.getElementById('article-body').innerHTML =
+      `<p>加载失败，请稍后重试。<a href="${pathPrefix}index.html">返回首页</a></p>`;
+  }
+}
+
+function loadRelatedArticles(allArticles, currentCategory, currentId, pathPrefix = '') {
+  const relatedArticles = allArticles
+    .filter(a => a.category === currentCategory && a.id !== currentId)
+    .slice(0, 3);
+
+  const relatedContainer = document.getElementById('related-articles');
+
+  if (relatedArticles.length === 0) {
+    relatedContainer.innerHTML = '<p style="text-align:center;color:#666;">暂无相关文章</p>';
+    return;
+  }
+
+  relatedContainer.innerHTML = relatedArticles.map(article => `
+    <a href="${pathPrefix}${article.category}/${article.slug}.html" class="related-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+        <span style="font-size:1.5rem;">${article.icon}</span>
+        <span style="font-size:.75rem;color:#00a8a8;font-weight:600;">${article.categoryLabel}</span>
+      </div>
+      <h4>${article.title}</h4>
+      <p>${article.summary}</p>
+    </a>
+  `).join('');
+}

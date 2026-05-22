@@ -1,1 +1,44 @@
-{"data":"aW1wb3J0IHsgbmVvbiB9IGZyb20gJ0BuZW9uZGF0YWJhc2Uvc2VydmVybGVzcyc7CmltcG9ydCBmcyBmcm9tICdmcyc7Cgpjb25zdCBzcWwgPSBuZW9uKHByb2Nlc3MuZW52LkRBVEFCQVNFX1VSTCk7Cgphc3luYyBmdW5jdGlvbiBjcmVhdGVUYWJsZXMoKSB7CiAgdHJ5IHsKICAgIGNvbnNvbGUubG9nKCfwn5SnIOWIm+W7uuaVsOaNruW6k+ihqC4uLicpOwogICAgCiAgICAvLyDnm7TmjqXmiafooYzliJvlu7rooajnmoQgU1FMCiAgICBhd2FpdCBzcWxgCiAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIGFydGljbGVzICgKICAgICAgICBpZCAgICAgICAgICAgICBWQVJDSEFSKDI1NSkgUFJJTUFSWSBLRVksCiAgICAgICAgc2x1ZyAgICAgICAgICAgVkFSQ0hBUigyNTUpIE5PVCBOVUxMLAogICAgICAgIGNhdGVnb3J5ICAgICAgIFZBUkNIQVIoNTApICBOT1QgTlVMTCwKICAgICAgICBjYXRlZ29yeV9sYWJlbCBWQVJDSEFSKDEwMCkgTk9UIE5VTEwsCiAgICAgICAgdGl0bGUgICAgICAgICAgVkFSQ0hBUig1MDApIE5PVCBOVUxMLAogICAgICAgIHN1bW1hcnkgICAgICAgIFRFWFQsCiAgICAgICAgaWNvbiAgICAgICAgICAgVkFSQ0hBUigxMCksCiAgICAgICAgaWNvbl9iZyAgICAgICAgVkFSQ0hBUigxMCksCiAgICAgICAgcmVhZF90aW1lICAgICAgU01BTExJTlQsCiAgICAgICAgbGlrZXMgICAgICAgICAgVkFSQ0hBUigyMCksCiAgICAgICAgYXV0aG9yICAgICAgICAgVkFSQ0hBUigxMDApLAogICAgICAgIHB1Ymxpc2hfZGF0ZSAgIERBVEUsCiAgICAgICAgYm9keSAgICAgICAgICAgVEVYVCAgICAgICAgIE5PVCBOVUxMLAogICAgICAgIGNyZWF0ZWRfYXQgICAgIFRJTUVTVEFNUFRaICBERUZBVUxUIE5PVygpLAogICAgICAgIHVwZGF0ZWRfYXQgICAgIFRJTUVTVEFNUFRaICBERUZBVUxUIE5PVygpCiAgICAgICk7CiAgICBgOwogICAgCiAgICBjb25zb2xlLmxvZygn8J+TiiDliJvlu7rntKLlvJUuLi4nKTsKICAgIAogICAgYXdhaXQgc3FsYENSRUFURSBJTkRFWCBJRiBOT1QgRVhJU1RTIGlkeF9hcnRpY2xlc19jYXRlZ29yeSBPTiBhcnRpY2xlcyhjYXRlZ29yeSk7YDsKICAgIGF3YWl0IHNxbGBDUkVBVEUgVU5JUVVFIElOREVYIElGIE5PVCBFWElTVFMgaWR4X2FydGljbGVzX2NhdGVnb3J5X3NsdWcgT04gYXJ0aWNsZXMoY2F0ZWdvcnksIHNsdWcpO2A7CiAgICBhd2FpdCBzcWxgQ1JFQVRFIElOREVYIElGIE5PVCBFWElTVFMgaWR4X2FydGljbGVzX3B1Ymxpc2hfZGF0ZSBPTiBhcnRpY2xlcyhwdWJsaXNoX2RhdGUgREVTQyk7YDsKICAgIAogICAgY29uc29sZS5sb2coJ+KchSDooajlkozntKLlvJXliJvlu7rmiJDlip/vvIEnKTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcign4p2MIOWIm+W7uuihqOWksei0pTonLCBlcnJvci5tZXNzYWdlKTsKICAgIHRocm93IGVycm9yOwogIH0KfQoKY3JlYXRlVGFibGVzKCk7Cg=="}
+import { neon } from '@neondatabase/serverless';
+import fs from 'fs';
+
+const sql = neon(process.env.DATABASE_URL);
+
+async function createTables() {
+  try {
+    console.log('🔧 创建数据库表...');
+    
+    // 直接执行创建表的 SQL
+    await sql`
+      CREATE TABLE IF NOT EXISTS articles (
+        id             VARCHAR(255) PRIMARY KEY,
+        slug           VARCHAR(255) NOT NULL,
+        category       VARCHAR(50)  NOT NULL,
+        category_label VARCHAR(100) NOT NULL,
+        title          VARCHAR(500) NOT NULL,
+        summary        TEXT,
+        icon           VARCHAR(10),
+        icon_bg        VARCHAR(10),
+        read_time      SMALLINT,
+        likes          VARCHAR(20),
+        author         VARCHAR(100),
+        publish_date   DATE,
+        body           TEXT         NOT NULL,
+        created_at     TIMESTAMPTZ  DEFAULT NOW(),
+        updated_at     TIMESTAMPTZ  DEFAULT NOW()
+      );
+    `;
+    
+    console.log('📊 创建索引...');
+    
+    await sql`CREATE INDEX IF NOT EXISTS idx_articles_category ON articles(category);`;
+    await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_articles_category_slug ON articles(category, slug);`;
+    await sql`CREATE INDEX IF NOT EXISTS idx_articles_publish_date ON articles(publish_date DESC);`;
+    
+    console.log('✅ 表和索引创建成功！');
+  } catch (error) {
+    console.error('❌ 创建表失败:', error.message);
+    throw error;
+  }
+}
+
+createTables();

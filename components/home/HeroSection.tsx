@@ -1,1 +1,33 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgQXJ0aWNsZVByZXZpZXcgfSBmcm9tICdAL2xpYi90eXBlcyc7CgppbnRlcmZhY2UgSGVyb1NlY3Rpb25Qcm9wcyB7CiAgZmVhdHVyZWQ6IEFydGljbGVQcmV2aWV3IHwgbnVsbDsKfQoKZXhwb3J0IGZ1bmN0aW9uIEhlcm9TZWN0aW9uKHsgZmVhdHVyZWQgfTogSGVyb1NlY3Rpb25Qcm9wcykgewogIHJldHVybiAoCiAgICA8c2VjdGlvbiBjbGFzc05hbWU9Imhlcm8iPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iaGVyby1jYXJkIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGVyby1pbWciIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Imhlcm8tY29udGVudCI+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImJhZGdlIj5UcmVuZGluZyBOb3c8L3NwYW4+CiAgICAgICAgICB7ZmVhdHVyZWQgPyAoCiAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgPGgxPntmZWF0dXJlZC50aXRsZX08L2gxPgogICAgICAgICAgICAgIDxwPntmZWF0dXJlZC5kZXNjcmlwdGlvbn08L3A+CiAgICAgICAgICAgICAgPExpbmsgaHJlZj17YC8ke2ZlYXR1cmVkLnR5cGV9LyR7ZmVhdHVyZWQuc2x1Z31gfSBjbGFzc05hbWU9InJlYWQtbGluayI+CiAgICAgICAgICAgICAgICBSZWFkIEZ1bGwgR3VpZGUgJnJhcnI7CiAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICA8Lz4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgPGgxPlNtYXJ0IFNvbHV0aW9ucyBmb3IgRXZlcnlkYXkgTGl2aW5nPC9oMT4KICAgICAgICAgICAgICA8cD5QcmFjdGljYWwgdGlwcyBvbiBraXRjaGVuIGhhY2tzLCBvcmdhbml6YXRpb24sIGNsZWFuaW5nLCBwbGFudCBjYXJlLCBhbmQgdGVjaCBlZmZpY2llbmN5LjwvcD4KICAgICAgICAgICAgPC8+CiAgICAgICAgICApfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cg=="}
+import Link from 'next/link';
+import { ArticlePreview } from '@/lib/types';
+
+interface HeroSectionProps {
+  featured: ArticlePreview | null;
+}
+
+export function HeroSection({ featured }: HeroSectionProps) {
+  return (
+    <section className="hero">
+      <div className="hero-card">
+        <div className="hero-img" />
+        <div className="hero-content">
+          <span className="badge">Trending Now</span>
+          {featured ? (
+            <>
+              <h1>{featured.title}</h1>
+              <p>{featured.description}</p>
+              <Link href={`/${featured.type}/${featured.slug}`} className="read-link">
+                Read Full Guide &rarr;
+              </Link>
+            </>
+          ) : (
+            <>
+              <h1>Smart Solutions for Everyday Living</h1>
+              <p>Practical tips on kitchen hacks, organization, cleaning, plant care, and tech efficiency.</p>
+            </>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}

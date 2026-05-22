@@ -1,1 +1,55 @@
-{"data":"aW50ZXJmYWNlIEFydGljbGVCb2R5UHJvcHMgewogIGJvZHk6IHN0cmluZzsKfQoKZnVuY3Rpb24gYWRkSGVhZGluZ0lkcyhodG1sOiBzdHJpbmcpOiBzdHJpbmcgewogIHJldHVybiBodG1sLnJlcGxhY2UoLzxoMihbXj5dKik+KC4qPyk8XC9oMj4vZ2ksIChfbWF0Y2gsIGF0dHJzLCBjb250ZW50KSA9PiB7CiAgICBjb25zdCB0ZXh0ID0gY29udGVudC5yZXBsYWNlKC88W14+XSs+L2csICcnKS50cmltKCk7CiAgICBjb25zdCBpZCA9IHRleHQudG9Mb3dlckNhc2UoKS5yZXBsYWNlKC9bXmEtejAtOV0rL2csICctJykucmVwbGFjZSgvXi18LSQvZywgJycpOwogICAgcmV0dXJuIGA8aDIke2F0dHJzfSBpZD0iJHtpZH0iPiR7Y29udGVudH08L2gyPmA7CiAgfSk7Cn0KCi8vIFN0cmlwIGZvbnQtc2l6ZSBhbmQgbWluLXdpZHRoIGZyb20gYSBDU1MgZGVjbGFyYXRpb24gYmxvY2sKZnVuY3Rpb24gc3RyaXBQcm9wcyhkZWNsOiBzdHJpbmcpOiBzdHJpbmcgewogIHJldHVybiBkZWNsCiAgICAucmVwbGFjZSgvXGJmb250LXNpemVccyo6W147XSs7Py9naSwgJycpCiAgICAucmVwbGFjZSgvXGJtaW4td2lkdGhccyo6W147XSs7Py9naSwgJycpOwp9CgpmdW5jdGlvbiBzY29wZVN0eWxlcyhodG1sOiBzdHJpbmcpOiBzdHJpbmcgewogIHJldHVybiBodG1sLnJlcGxhY2UoLzxzdHlsZVtePl0qPihbXHNcU10qPyk8XC9zdHlsZT4vZ2ksIChfbWF0Y2gsIGNzczogc3RyaW5nKSA9PiB7CiAgICBjb25zdCBzY29wZWQgPSBjc3MucmVwbGFjZSgKICAgICAgLyhbXnt9QC9dKylceyhbXn1dKilcfS9nLAogICAgICAoX3J1bGU6IHN0cmluZywgc2VsZWN0b3JzOiBzdHJpbmcsIGRlY2w6IHN0cmluZykgPT4gewogICAgICAgIGNvbnN0IHNjb3BlZFNlbGVjdG9ycyA9IHNlbGVjdG9ycwogICAgICAgICAgLnNwbGl0KCcsJykKICAgICAgICAgIC5tYXAoKHM6IHN0cmluZykgPT4gewogICAgICAgICAgICBjb25zdCB0ID0gcy50cmltKCk7CiAgICAgICAgICAgIGlmICghdCB8fCB0LnN0YXJ0c1dpdGgoJ0AnKSB8fCB0LnN0YXJ0c1dpdGgoJ2Zyb20nKSB8fCB0LnN0YXJ0c1dpdGgoJ3RvJykgfHwgL15cZC8udGVzdCh0KSkgcmV0dXJuIHM7CiAgICAgICAgICAgIGlmICh0ID09PSAnYm9keScgfHwgdCA9PT0gJ2h0bWwnIHx8IHQgPT09ICc6cm9vdCcpIHJldHVybiAnJzsKICAgICAgICAgICAgcmV0dXJuIGAuYXJ0aWNsZS1jb250ZW50ICR7dH1gOwogICAgICAgICAgfSkKICAgICAgICAgIC5maWx0ZXIoQm9vbGVhbikKICAgICAgICAgIC5qb2luKCcsJyk7CiAgICAgICAgaWYgKCFzY29wZWRTZWxlY3RvcnMudHJpbSgpKSByZXR1cm4gJyc7CiAgICAgICAgcmV0dXJuIHNjb3BlZFNlbGVjdG9ycyArICd7JyArIHN0cmlwUHJvcHMoZGVjbCkgKyAnfSc7CiAgICAgIH0KICAgICk7CiAgICByZXR1cm4gYDxzdHlsZT4ke3Njb3BlZH08L3N0eWxlPmA7CiAgfSk7Cn0KCi8vIFdyYXAgYmFyZSB0YWJsZXMgKG5vdCBhbHJlYWR5IGluc2lkZSAudGFibGVDb250YWluZXIpIHdpdGggYSBzY3JvbGxhYmxlIGRpdgpmdW5jdGlvbiB3cmFwVGFibGVzKGh0bWw6IHN0cmluZyk6IHN0cmluZyB7CiAgcmV0dXJuIGh0bWwucmVwbGFjZSgvKDx0YWJsZVtcc1xTXSo/PFwvdGFibGU+KS9naSwgKG1hdGNoKSA9PiB7CiAgICByZXR1cm4gYDxkaXYgc3R5bGU9Im92ZXJmbG93LXg6YXV0bzstd2Via2l0LW92ZXJmbG93LXNjcm9sbGluZzp0b3VjaDt3aWR0aDoxMDAlIj4ke21hdGNofTwvZGl2PmA7CiAgfSk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBBcnRpY2xlQm9keSh7IGJvZHkgfTogQXJ0aWNsZUJvZHlQcm9wcykgewogIGNvbnN0IHByb2Nlc3NlZCA9IHdyYXBUYWJsZXMoc2NvcGVTdHlsZXMoYWRkSGVhZGluZ0lkcyhib2R5KSkpOwogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iYXJ0aWNsZS1jb250ZW50IiBkYW5nZXJvdXNseVNldElubmVySFRNTD17eyBfX2h0bWw6IHByb2Nlc3NlZCB9fSAvPgogICk7Cn0K"}
+interface ArticleBodyProps {
+  body: string;
+}
+
+function addHeadingIds(html: string): string {
+  return html.replace(/<h2([^>]*)>(.*?)<\/h2>/gi, (_match, attrs, content) => {
+    const text = content.replace(/<[^>]+>/g, '').trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return `<h2${attrs} id="${id}">${content}</h2>`;
+  });
+}
+
+// Strip font-size and min-width from a CSS declaration block
+function stripProps(decl: string): string {
+  return decl
+    .replace(/\bfont-size\s*:[^;]+;?/gi, '')
+    .replace(/\bmin-width\s*:[^;]+;?/gi, '');
+}
+
+function scopeStyles(html: string): string {
+  return html.replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, (_match, css: string) => {
+    const scoped = css.replace(
+      /([^{}@/]+)\{([^}]*)\}/g,
+      (_rule: string, selectors: string, decl: string) => {
+        const scopedSelectors = selectors
+          .split(',')
+          .map((s: string) => {
+            const t = s.trim();
+            if (!t || t.startsWith('@') || t.startsWith('from') || t.startsWith('to') || /^\d/.test(t)) return s;
+            if (t === 'body' || t === 'html' || t === ':root') return '';
+            return `.article-content ${t}`;
+          })
+          .filter(Boolean)
+          .join(',');
+        if (!scopedSelectors.trim()) return '';
+        return scopedSelectors + '{' + stripProps(decl) + '}';
+      }
+    );
+    return `<style>${scoped}</style>`;
+  });
+}
+
+// Wrap bare tables (not already inside .tableContainer) with a scrollable div
+function wrapTables(html: string): string {
+  return html.replace(/(<table[\s\S]*?<\/table>)/gi, (match) => {
+    return `<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%">${match}</div>`;
+  });
+}
+
+export function ArticleBody({ body }: ArticleBodyProps) {
+  const processed = wrapTables(scopeStyles(addHeadingIds(body)));
+  return (
+    <div className="article-content" dangerouslySetInnerHTML={{ __html: processed }} />
+  );
+}

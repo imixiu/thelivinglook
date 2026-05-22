@@ -1,1 +1,29 @@
-{"data":"aW50ZXJmYWNlIEFydGljbGVUb2NQcm9wcyB7CiAgYm9keTogc3RyaW5nOwp9CgpleHBvcnQgZnVuY3Rpb24gQXJ0aWNsZVRvYyh7IGJvZHkgfTogQXJ0aWNsZVRvY1Byb3BzKSB7CiAgY29uc3QgaGVhZGluZ1JlZ2V4ID0gLzxoMltePl0qPiguKj8pPFwvaDI+L2dpOwogIGNvbnN0IGhlYWRpbmdzOiB7IHRleHQ6IHN0cmluZzsgaWQ6IHN0cmluZyB9W10gPSBbXTsKICBsZXQgbWF0Y2g7CiAgd2hpbGUgKChtYXRjaCA9IGhlYWRpbmdSZWdleC5leGVjKGJvZHkpKSAhPT0gbnVsbCkgewogICAgY29uc3QgdGV4dCA9IG1hdGNoWzFdLnJlcGxhY2UoLzxbXj5dKz4vZywgJycpLnRyaW0oKTsKICAgIGNvbnN0IGlkID0gdGV4dC50b0xvd2VyQ2FzZSgpLnJlcGxhY2UoL1teYS16MC05XSsvZywgJy0nKS5yZXBsYWNlKC9eLXwtJC9nLCAnJyk7CiAgICBoZWFkaW5ncy5wdXNoKHsgdGV4dCwgaWQgfSk7CiAgfQoKICBpZiAoaGVhZGluZ3MubGVuZ3RoID09PSAwKSByZXR1cm4gbnVsbDsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJ0YWJsZS1vZi1jb250ZW50cyI+CiAgICAgIDxoMz5UYWJsZSBvZiBDb250ZW50czwvaDM+CiAgICAgIDx1bCBjbGFzc05hbWU9InRvYy1saXN0Ij4KICAgICAgICB7aGVhZGluZ3MubWFwKChoKSA9PiAoCiAgICAgICAgICA8bGkga2V5PXtoLmlkfT4KICAgICAgICAgICAgPGEgaHJlZj17YCMke2guaWR9YH0+e2gudGV4dH08L2E+CiAgICAgICAgICA8L2xpPgogICAgICAgICkpfQogICAgICA8L3VsPgogICAgPC9kaXY+CiAgKTsKfQo="}
+interface ArticleTocProps {
+  body: string;
+}
+
+export function ArticleToc({ body }: ArticleTocProps) {
+  const headingRegex = /<h2[^>]*>(.*?)<\/h2>/gi;
+  const headings: { text: string; id: string }[] = [];
+  let match;
+  while ((match = headingRegex.exec(body)) !== null) {
+    const text = match[1].replace(/<[^>]+>/g, '').trim();
+    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    headings.push({ text, id });
+  }
+
+  if (headings.length === 0) return null;
+
+  return (
+    <div className="table-of-contents">
+      <h3>Table of Contents</h3>
+      <ul className="toc-list">
+        {headings.map((h) => (
+          <li key={h.id}>
+            <a href={`#${h.id}`}>{h.text}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}

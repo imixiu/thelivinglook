@@ -1,1 +1,78 @@
-{"data":"aW1wb3J0IHsgbmVvbiB9IGZyb20gJ0BuZW9uZGF0YWJhc2Uvc2VydmVybGVzcyc7CmltcG9ydCAqIGFzIGZzIGZyb20gJ2ZzJzsKaW1wb3J0ICogYXMgcGF0aCBmcm9tICdwYXRoJzsKCmludGVyZmFjZSBBcnRpY2xlRGF0YSB7CiAgaWQ6IHN0cmluZzsKICBzbHVnOiBzdHJpbmc7CiAgY2F0ZWdvcnk6IHN0cmluZzsKICBjYXRlZ29yeUxhYmVsOiBzdHJpbmc7CiAgdGl0bGU6IHN0cmluZzsKICBzdW1tYXJ5OiBzdHJpbmc7CiAgaWNvbjogc3RyaW5nOwogIGljb25CZzogc3RyaW5nOwogIHJlYWRUaW1lOiBzdHJpbmc7CiAgbGlrZXM6IHN0cmluZzsKICBhdXRob3I6IHN0cmluZzsKICBwdWJsaXNoRGF0ZTogc3RyaW5nOwogIGJvZHk6IHN0cmluZzsKfQoKYXN5bmMgZnVuY3Rpb24gc2VlZCgpIHsKICAvLyDmo4Dmn6Xnjq/looPlj5jph48KICBpZiAoIXByb2Nlc3MuZW52LkRBVEFCQVNFX1VSTCkgewogICAgY29uc29sZS5lcnJvcign4p2MIERBVEFCQVNFX1VSTCBlbnZpcm9ubWVudCB2YXJpYWJsZSBpcyBub3Qgc2V0Jyk7CiAgICBjb25zb2xlLmxvZygnUnVuOiB2ZXJjZWwgZW52IHB1bGwnKTsKICAgIHByb2Nlc3MuZXhpdCgxKTsKICB9CgogIGNvbnN0IHNxbCA9IG5lb24ocHJvY2Vzcy5lbnYuREFUQUJBU0VfVVJMKTsKCiAgdHJ5IHsKICAgIC8vIOivu+WPluaWh+eroOaVsOaNrgogICAgY29uc3QgYXJ0aWNsZXNQYXRoID0gcGF0aC5qb2luKF9fZGlybmFtZSwgJy4uL2RhdGEvYXJ0aWNsZXMuanNvbicpOwogICAgY29uc3QgYXJ0aWNsZXNGaWxlID0gZnMucmVhZEZpbGVTeW5jKGFydGljbGVzUGF0aCwgJ3V0Zi04Jyk7CiAgICBjb25zdCB7IGFydGljbGVzIH0gPSBKU09OLnBhcnNlKGFydGljbGVzRmlsZSkgYXMgeyBhcnRpY2xlczogQXJ0aWNsZURhdGFbXSB9OwoKICAgIGNvbnNvbGUubG9nKGDwn5OWIEZvdW5kICR7YXJ0aWNsZXMubGVuZ3RofSBhcnRpY2xlc2ApOwoKICAgIC8vIENsZWFyIGV4aXN0aW5nIGRhdGEKICAgIGF3YWl0IHNxbGBERUxFVEUgRlJPTSBhcnRpY2xlc2A7CiAgICBjb25zb2xlLmxvZygn8J+Xke+4jyAgQ2xlYXJlZCBhcnRpY2xlcyB0YWJsZScpOwoKICAgIC8vIEluc2VydCBkYXRhCiAgICBmb3IgKGNvbnN0IGFydGljbGUgb2YgYXJ0aWNsZXMpIHsKICAgICAgYXdhaXQgc3FsYAogICAgICAgIElOU0VSVCBJTlRPIGFydGljbGVzICgKICAgICAgICAgIGlkLCBzbHVnLCBjYXRlZ29yeSwgY2F0ZWdvcnlfbGFiZWwsIHRpdGxlLCBzdW1tYXJ5LAogICAgICAgICAgaWNvbiwgaWNvbl9iZywgcmVhZF90aW1lLCBsaWtlcywgYXV0aG9yLCBwdWJsaXNoX2RhdGUsIGJvZHkKICAgICAgICApIFZBTFVFUyAoCiAgICAgICAgICAke2FydGljbGUuaWR9LAogICAgICAgICAgJHthcnRpY2xlLnNsdWd9LAogICAgICAgICAgJHthcnRpY2xlLmNhdGVnb3J5fSwKICAgICAgICAgICR7YXJ0aWNsZS5jYXRlZ29yeUxhYmVsfSwKICAgICAgICAgICR7YXJ0aWNsZS50aXRsZX0sCiAgICAgICAgICAke2FydGljbGUuc3VtbWFyeX0sCiAgICAgICAgICAke2FydGljbGUuaWNvbn0sCiAgICAgICAgICAke2FydGljbGUuaWNvbkJnfSwKICAgICAgICAgICR7cGFyc2VJbnQoYXJ0aWNsZS5yZWFkVGltZSl9LAogICAgICAgICAgJHthcnRpY2xlLmxpa2VzfSwKICAgICAgICAgICR7YXJ0aWNsZS5hdXRob3J9LAogICAgICAgICAgJHthcnRpY2xlLnB1Ymxpc2hEYXRlfTo6ZGF0ZSwKICAgICAgICAgICR7YXJ0aWNsZS5ib2R5fQogICAgICAgICkKICAgICAgYDsKICAgICAgY29uc29sZS5sb2coYOKchSBJbnNlcnRlZDogJHthcnRpY2xlLnRpdGxlfWApOwogICAgfQoKICAgIC8vIFZlcmlmeQogICAgY29uc3QgY291bnQgPSBhd2FpdCBzcWxgU0VMRUNUIENPVU5UKCopIGFzIGNvdW50IEZST00gYXJ0aWNsZXNgOwogICAgY29uc29sZS5sb2coYFxu8J+OiSBTdWNjZXNzZnVsbHkgaW1wb3J0ZWQgJHtjb3VudFswXS5jb3VudH0gYXJ0aWNsZXMhYCk7CgogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLmVycm9yKCfinYwgU2VlZCBmYWlsZWQ6JywgZXJyb3IpOwogICAgcHJvY2Vzcy5leGl0KDEpOwogIH0KfQoKc2VlZCgpOw=="}
+import { neon } from '@neondatabase/serverless';
+import * as fs from 'fs';
+import * as path from 'path';
+
+interface ArticleData {
+  id: string;
+  slug: string;
+  category: string;
+  categoryLabel: string;
+  title: string;
+  summary: string;
+  icon: string;
+  iconBg: string;
+  readTime: string;
+  likes: string;
+  author: string;
+  publishDate: string;
+  body: string;
+}
+
+async function seed() {
+  // 检查环境变量
+  if (!process.env.DATABASE_URL) {
+    console.error('❌ DATABASE_URL environment variable is not set');
+    console.log('Run: vercel env pull');
+    process.exit(1);
+  }
+
+  const sql = neon(process.env.DATABASE_URL);
+
+  try {
+    // 读取文章数据
+    const articlesPath = path.join(__dirname, '../data/articles.json');
+    const articlesFile = fs.readFileSync(articlesPath, 'utf-8');
+    const { articles } = JSON.parse(articlesFile) as { articles: ArticleData[] };
+
+    console.log(`📖 Found ${articles.length} articles`);
+
+    // Clear existing data
+    await sql`DELETE FROM articles`;
+    console.log('🗑️  Cleared articles table');
+
+    // Insert data
+    for (const article of articles) {
+      await sql`
+        INSERT INTO articles (
+          id, slug, category, category_label, title, summary,
+          icon, icon_bg, read_time, likes, author, publish_date, body
+        ) VALUES (
+          ${article.id},
+          ${article.slug},
+          ${article.category},
+          ${article.categoryLabel},
+          ${article.title},
+          ${article.summary},
+          ${article.icon},
+          ${article.iconBg},
+          ${parseInt(article.readTime)},
+          ${article.likes},
+          ${article.author},
+          ${article.publishDate}::date,
+          ${article.body}
+        )
+      `;
+      console.log(`✅ Inserted: ${article.title}`);
+    }
+
+    // Verify
+    const count = await sql`SELECT COUNT(*) as count FROM articles`;
+    console.log(`\n🎉 Successfully imported ${count[0].count} articles!`);
+
+  } catch (error) {
+    console.error('❌ Seed failed:', error);
+    process.exit(1);
+  }
+}
+
+seed();

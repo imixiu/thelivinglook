@@ -1,1 +1,19 @@
-{"data":"aW1wb3J0IHsgZ2V0QWxsQXJ0aWNsZXMsIGdldEZlYXR1cmVkQXJ0aWNsZSB9IGZyb20gJ0AvbGliL3F1ZXJpZXMnOwppbXBvcnQgeyBIZXJvU2VjdGlvbiB9IGZyb20gJ0AvY29tcG9uZW50cy9ob21lL0hlcm9TZWN0aW9uJzsKaW1wb3J0IHsgQXJ0aWNsZUdyaWQgfSBmcm9tICdAL2NvbXBvbmVudHMvaG9tZS9BcnRpY2xlR3JpZCc7CmltcG9ydCB7IFF1aWNrVGlwcyB9IGZyb20gJ0AvY29tcG9uZW50cy9ob21lL1F1aWNrVGlwcyc7CgpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBIb21lUGFnZSgpIHsKICBjb25zdCBbYXJ0aWNsZXMsIGZlYXR1cmVkXSA9IGF3YWl0IFByb21pc2UuYWxsKFsKICAgIGdldEFsbEFydGljbGVzKCksCiAgICBnZXRGZWF0dXJlZEFydGljbGUoKSwKICBdKTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxIZXJvU2VjdGlvbiBmZWF0dXJlZD17ZmVhdHVyZWR9IC8+CiAgICAgIDxBcnRpY2xlR3JpZCBhcnRpY2xlcz17YXJ0aWNsZXN9IC8+CiAgICAgIDxRdWlja1RpcHMgLz4KICAgIDwvPgogICk7Cn0K"}
+import { getAllArticles, getFeaturedArticle } from '@/lib/queries';
+import { HeroSection } from '@/components/home/HeroSection';
+import { ArticleGrid } from '@/components/home/ArticleGrid';
+import { QuickTips } from '@/components/home/QuickTips';
+
+export default async function HomePage() {
+  const [articles, featured] = await Promise.all([
+    getAllArticles(),
+    getFeaturedArticle(),
+  ]);
+
+  return (
+    <>
+      <HeroSection featured={featured} />
+      <ArticleGrid articles={articles} />
+      <QuickTips />
+    </>
+  );
+}

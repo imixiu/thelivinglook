@@ -1,1 +1,78 @@
-{"data":"aW1wb3J0IHsgbm90Rm91bmQgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnOwppbXBvcnQgdHlwZSB7IE1ldGFkYXRhIH0gZnJvbSAnbmV4dCc7CmltcG9ydCB7IGdldEFydGljbGVzQnlUeXBlIH0gZnJvbSAnQC9saWIvcXVlcmllcyc7Cgpjb25zdCBjYXRlZ29yeUxhYmVsczogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHsKICAna2l0Y2hlbi1oYWNrcyc6ICdLaXRjaGVuIEhhY2tzJywKICAnY2xvc2V0LW9yZ2FuaXphdGlvbic6ICdDbG9zZXQgT3JnYW5pemF0aW9uJywKICAnZWNvLWNsZWFuaW5nJzogJ0Vjby1DbGVhbmluZycsCiAgJ3BsYW50LWNhcmUnOiAnUGxhbnQgQ2FyZScsCiAgJ2xhdW5kcnktc2VjcmV0cyc6ICdMYXVuZHJ5IFNlY3JldHMnLAogICd0ZWNoLWVmZmljaWVuY3knOiAnVGVjaCBFZmZpY2llbmN5JywKfTsKCmNvbnN0IFBBR0VfU0laRSA9IDI0OwoKaW50ZXJmYWNlIFByb3BzIHsKICBwYXJhbXM6IFByb21pc2U8eyBjYXRlZ29yeTogc3RyaW5nIH0+OwogIHNlYXJjaFBhcmFtczogUHJvbWlzZTx7IHBhZ2U/OiBzdHJpbmcgfT47Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZW5lcmF0ZU1ldGFkYXRhKHsgcGFyYW1zIH06IFByb3BzKTogUHJvbWlzZTxNZXRhZGF0YT4gewogIGNvbnN0IHsgY2F0ZWdvcnkgfSA9IGF3YWl0IHBhcmFtczsKICBjb25zdCBsYWJlbCA9IGNhdGVnb3J5TGFiZWxzW2NhdGVnb3J5XTsKICBpZiAoIWxhYmVsKSByZXR1cm4geyB0aXRsZTogJ05vdCBGb3VuZCcgfTsKICByZXR1cm4gewogICAgdGl0bGU6IGAke2xhYmVsfSAtIFRoZUxpdmluZ0xvb2tgLAogICAgZGVzY3JpcHRpb246IGBBcnRpY2xlcyBhYm91dCAke2xhYmVsfWAsCiAgICBhbHRlcm5hdGVzOiB7IGNhbm9uaWNhbDogYGh0dHBzOi8vd3d3LnRoZWxpdmluZ2xvb2suY29tLyR7Y2F0ZWdvcnl9YCB9LAogIH07Cn0KCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIENhdGVnb3J5UGFnZSh7IHBhcmFtcywgc2VhcmNoUGFyYW1zIH06IFByb3BzKSB7CiAgY29uc3QgeyBjYXRlZ29yeSB9ID0gYXdhaXQgcGFyYW1zOwogIGNvbnN0IHsgcGFnZTogcGFnZVN0ciB9ID0gYXdhaXQgc2VhcmNoUGFyYW1zOwogIGlmICghY2F0ZWdvcnlMYWJlbHNbY2F0ZWdvcnldKSBub3RGb3VuZCgpOwoKICBjb25zdCBwYWdlID0gTWF0aC5tYXgoMSwgcGFyc2VJbnQocGFnZVN0ciB8fCAnMScpKTsKICBjb25zdCB7IGFydGljbGVzLCB0b3RhbCB9ID0gYXdhaXQgZ2V0QXJ0aWNsZXNCeVR5cGUoY2F0ZWdvcnksIHBhZ2UsIFBBR0VfU0laRSk7CiAgY29uc3QgdG90YWxQYWdlcyA9IE1hdGguY2VpbCh0b3RhbCAvIFBBR0VfU0laRSk7CgogIHJldHVybiAoCiAgICA8ZGl2IHN0eWxlPXt7IG1heFdpZHRoOiAxMjAwLCBtYXJnaW46ICcwIGF1dG8nLCBwYWRkaW5nOiAnNDBweCAyNHB4JyB9fT4KICAgICAgPGgxIHN0eWxlPXt7IG1hcmdpbkJvdHRvbTogOCB9fT57Y2F0ZWdvcnlMYWJlbHNbY2F0ZWdvcnldfTwvaDE+CiAgICAgIDxwIHN0eWxlPXt7IGNvbG9yOiAnIzg4OCcsIG1hcmdpbkJvdHRvbTogMzIsIGZvbnRTaXplOiAnMC45cmVtJyB9fT57dG90YWwudG9Mb2NhbGVTdHJpbmcoKX0gYXJ0aWNsZXM8L3A+CgogICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdncmlkJywgZ3JpZFRlbXBsYXRlQ29sdW1uczogJ3JlcGVhdChhdXRvLWZpbGwsIG1pbm1heCgyODBweCwgMWZyKSknLCBnYXA6IDI0IH19PgogICAgICAgIHthcnRpY2xlcy5tYXAoKGFydGljbGUpID0+ICgKICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgIGtleT17YXJ0aWNsZS5pZH0KICAgICAgICAgICAgaHJlZj17YC8ke2FydGljbGUudHlwZX0vJHthcnRpY2xlLnNsdWd9YH0KICAgICAgICAgICAgc3R5bGU9e3sgdGV4dERlY29yYXRpb246ICdub25lJywgY29sb3I6ICdpbmhlcml0JywgYmFja2dyb3VuZDogJyNmZmYnLCBib3JkZXJSYWRpdXM6IDEyLCBvdmVyZmxvdzogJ2hpZGRlbicsIGJveFNoYWRvdzogJzAgMnB4IDEwcHggcmdiYSgwLDAsMCwwLjA4KScsIGRpc3BsYXk6ICdibG9jaycgfX0KICAgICAgICAgID4KICAgICAgICAgICAge2FydGljbGUuaW1nICYmICgKICAgICAgICAgICAgICA8aW1nIHNyYz17YXJ0aWNsZS5pbWd9IGFsdD17YXJ0aWNsZS50aXRsZX0gc3R5bGU9e3sgd2lkdGg6ICcxMDAlJywgaGVpZ2h0OiAxODAsIG9iamVjdEZpdDogJ2NvdmVyJywgZGlzcGxheTogJ2Jsb2NrJyB9fSAvPgogICAgICAgICAgICApfQogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6IDE2IH19PgogICAgICAgICAgICAgIDxoMiBzdHlsZT17eyBmb250U2l6ZTogJzFyZW0nLCBtYXJnaW5Cb3R0b206IDgsIGxpbmVIZWlnaHQ6IDEuNCB9fT57YXJ0aWNsZS50aXRsZX08L2gyPgogICAgICAgICAgICAgIHthcnRpY2xlLmRlc2NyaXB0aW9uICYmIDxwIHN0eWxlPXt7IGZvbnRTaXplOiAnMC44NXJlbScsIGNvbG9yOiAnIzY2NicsIG1hcmdpbjogMCwgZGlzcGxheTogJy13ZWJraXQtYm94JywgV2Via2l0TGluZUNsYW1wOiAyLCBXZWJraXRCb3hPcmllbnQ6ICd2ZXJ0aWNhbCcsIG92ZXJmbG93OiAnaGlkZGVuJyB9fT57YXJ0aWNsZS5kZXNjcmlwdGlvbn08L3A+fQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvTGluaz4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICB7dG90YWxQYWdlcyA+IDEgJiYgKAogICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcicsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBnYXA6IDgsIG1hcmdpblRvcDogNDggfX0+CiAgICAgICAgICB7cGFnZSA+IDEgJiYgKAogICAgICAgICAgICA8TGluayBocmVmPXtgLyR7Y2F0ZWdvcnl9P3BhZ2U9JHtwYWdlIC0gMX1gfSBzdHlsZT17eyBwYWRkaW5nOiAnOHB4IDE2cHgnLCBib3JkZXI6ICcxcHggc29saWQgI2RkZCcsIGJvcmRlclJhZGl1czogNiwgdGV4dERlY29yYXRpb246ICdub25lJywgY29sb3I6ICcjMzMzJyB9fT7ihpAgUHJldjwvTGluaz4KICAgICAgICAgICl9CiAgICAgICAgICA8c3BhbiBzdHlsZT17eyBjb2xvcjogJyM2NjYnLCBmb250U2l6ZTogJzAuOXJlbScgfX0+UGFnZSB7cGFnZX0gb2Yge3RvdGFsUGFnZXMudG9Mb2NhbGVTdHJpbmcoKX08L3NwYW4+CiAgICAgICAgICB7cGFnZSA8IHRvdGFsUGFnZXMgJiYgKAogICAgICAgICAgICA8TGluayBocmVmPXtgLyR7Y2F0ZWdvcnl9P3BhZ2U9JHtwYWdlICsgMX1gfSBzdHlsZT17eyBwYWRkaW5nOiAnOHB4IDE2cHgnLCBib3JkZXI6ICcxcHggc29saWQgI2RkZCcsIGJvcmRlclJhZGl1czogNiwgdGV4dERlY29yYXRpb246ICdub25lJywgY29sb3I6ICcjMzMzJyB9fT5OZXh0IOKGkjwvTGluaz4KICAgICAgICAgICl9CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import { getArticlesByType } from '@/lib/queries';
+
+const categoryLabels: Record<string, string> = {
+  'kitchen-hacks': 'Kitchen Hacks',
+  'closet-organization': 'Closet Organization',
+  'eco-cleaning': 'Eco-Cleaning',
+  'plant-care': 'Plant Care',
+  'laundry-secrets': 'Laundry Secrets',
+  'tech-efficiency': 'Tech Efficiency',
+};
+
+const PAGE_SIZE = 24;
+
+interface Props {
+  params: Promise<{ category: string }>;
+  searchParams: Promise<{ page?: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category } = await params;
+  const label = categoryLabels[category];
+  if (!label) return { title: 'Not Found' };
+  return {
+    title: `${label} - TheLivingLook`,
+    description: `Articles about ${label}`,
+    alternates: { canonical: `https://www.thelivinglook.com/${category}` },
+  };
+}
+
+export default async function CategoryPage({ params, searchParams }: Props) {
+  const { category } = await params;
+  const { page: pageStr } = await searchParams;
+  if (!categoryLabels[category]) notFound();
+
+  const page = Math.max(1, parseInt(pageStr || '1'));
+  const { articles, total } = await getArticlesByType(category, page, PAGE_SIZE);
+  const totalPages = Math.ceil(total / PAGE_SIZE);
+
+  return (
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 24px' }}>
+      <h1 style={{ marginBottom: 8 }}>{categoryLabels[category]}</h1>
+      <p style={{ color: '#888', marginBottom: 32, fontSize: '0.9rem' }}>{total.toLocaleString()} articles</p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 24 }}>
+        {articles.map((article) => (
+          <Link
+            key={article.id}
+            href={`/${article.type}/${article.slug}`}
+            style={{ textDecoration: 'none', color: 'inherit', background: '#fff', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 10px rgba(0,0,0,0.08)', display: 'block' }}
+          >
+            {article.img && (
+              <img src={article.img} alt={article.title} style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} />
+            )}
+            <div style={{ padding: 16 }}>
+              <h2 style={{ fontSize: '1rem', marginBottom: 8, lineHeight: 1.4 }}>{article.title}</h2>
+              {article.description && <p style={{ fontSize: '0.85rem', color: '#666', margin: 0, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{article.description}</p>}
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {totalPages > 1 && (
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, marginTop: 48 }}>
+          {page > 1 && (
+            <Link href={`/${category}?page=${page - 1}`} style={{ padding: '8px 16px', border: '1px solid #ddd', borderRadius: 6, textDecoration: 'none', color: '#333' }}>← Prev</Link>
+          )}
+          <span style={{ color: '#666', fontSize: '0.9rem' }}>Page {page} of {totalPages.toLocaleString()}</span>
+          {page < totalPages && (
+            <Link href={`/${category}?page=${page + 1}`} style={{ padding: '8px 16px', border: '1px solid #ddd', borderRadius: 6, textDecoration: 'none', color: '#333' }}>Next →</Link>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}

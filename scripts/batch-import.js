@@ -1,1 +1,152 @@
-{"data":"Y29uc3QgeyBQb29sIH0gPSByZXF1aXJlKCdwZycpOwpjb25zdCBodHRwcyA9IHJlcXVpcmUoJ2h0dHBzJyk7Cgpjb25zdCBEQl9VUkwgPSAncG9zdGdyZXNxbDovL25lb25kYl9vd25lcjpucGdfSEt3OHF4R2c1Y2ZqQGVwLWZhbmN5LWxlYWYtYTR6dWthdTktcG9vbGVyLnVzLWVhc3QtMS5hd3MubmVvbi50ZWNoL25lb25kYj9zc2xtb2RlPXJlcXVpcmUnOwpjb25zdCBTSVRFID0gJ3RoZWxpdmluZ2xvb2snOwpjb25zdCBTSVRFTUFQX0lOREVYID0gYGh0dHBzOi8vd3d3LmFsaWJhYmEuY29tL3NpdGVtYXAvJHtTSVRFfS9zaXRlbWFwaW5kZXgueG1sYDsKY29uc3QgQVJUSUNMRV9BUEkgPSAnaHR0cHM6Ly9saWZldGlwcy5hbGliYWJhLmNvbS92ZXJ0aWNhbFNpdGUvYXJ0aWNsZS5qc29uJzsKY29uc3QgQ09OQ1VSUkVOQ1kgPSA1Owpjb25zdCBCQVRDSF9TSVpFID0gNTA7Cgpjb25zdCBwb29sID0gbmV3IFBvb2woewogIGNvbm5lY3Rpb25TdHJpbmc6IERCX1VSTCwKICBtYXg6IDEwLAogIHNzbDogeyByZWplY3RVbmF1dGhvcml6ZWQ6IGZhbHNlIH0sCiAgc3RhdGVtZW50X3RpbWVvdXQ6IDMwMDAwLAp9KTsKCmxldCBzdGF0cyA9IHsgdG90YWw6IDAsIGluc2VydGVkOiAwLCBza2lwcGVkOiAwLCBmYWlsZWQ6IDAsIGFwaUVtcHR5OiAwIH07CgpmdW5jdGlvbiBodHRwR2V0KHVybCkgewogIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7CiAgICBjb25zdCByZXEgPSBodHRwcy5nZXQodXJsLCB7IHRpbWVvdXQ6IDIwMDAwIH0sIHJlcyA9PiB7CiAgICAgIGxldCBkYXRhID0gJyc7CiAgICAgIHJlcy5vbignZGF0YScsIGNodW5rID0+IGRhdGEgKz0gY2h1bmspOwogICAgICByZXMub24oJ2VuZCcsICgpID0+IHJlc29sdmUoeyBzdGF0dXM6IHJlcy5zdGF0dXNDb2RlLCBib2R5OiBkYXRhIH0pKTsKICAgIH0pOwogICAgcmVxLm9uKCdlcnJvcicsIHJlamVjdCk7CiAgICByZXEub24oJ3RpbWVvdXQnLCAoKSA9PiB7IHJlcS5kZXN0cm95KCk7IHJlamVjdChuZXcgRXJyb3IoJ3RpbWVvdXQnKSk7IH0pOwogIH0pOwp9CgpmdW5jdGlvbiBleHRyYWN0VXJscyh4bWwpIHsKICBjb25zdCB1cmxzID0gW107CiAgY29uc3QgcmUgPSAvPGxvYz4oW148XSspPFwvbG9jPi9nOwogIGxldCBtOwogIHdoaWxlICgobSA9IHJlLmV4ZWMoeG1sKSkgIT09IG51bGwpIHVybHMucHVzaChtWzFdKTsKICByZXR1cm4gdXJsczsKfQoKZnVuY3Rpb24gcGFyc2VTbHVnQW5kVHlwZSh1cmwpIHsKICBjb25zdCBwYXJ0cyA9IG5ldyBVUkwodXJsKS5wYXRobmFtZS5zcGxpdCgnLycpLmZpbHRlcihCb29sZWFuKTsKICBpZiAocGFydHMubGVuZ3RoID49IDIpIHsKICAgIHJldHVybiB7IHR5cGU6IHBhcnRzW3BhcnRzLmxlbmd0aCAtIDJdLCBzbHVnOiBwYXJ0c1twYXJ0cy5sZW5ndGggLSAxXSB9OwogIH0KICByZXR1cm4gbnVsbDsKfQoKYXN5bmMgZnVuY3Rpb24gZmV0Y2hBcnRpY2xlKHVybCkgewogIGNvbnN0IGtleSA9IGAke1NJVEV9fHwke3VybH1gOwogIGNvbnN0IGFwaVVybCA9IGAke0FSVElDTEVfQVBJfT9rZXk9JHtlbmNvZGVVUklDb21wb25lbnQoa2V5KX1gOwogIGNvbnN0IHJlcyA9IGF3YWl0IGh0dHBHZXQoYXBpVXJsKTsKICBpZiAocmVzLnN0YXR1cyAhPT0gMjAwKSByZXR1cm4gbnVsbDsKICB0cnkgewogICAgcmV0dXJuIEpTT04ucGFyc2UocmVzLmJvZHkpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIG51bGw7CiAgfQp9Cgphc3luYyBmdW5jdGlvbiBpbnNlcnRBcnRpY2xlKGFydCwgc2x1ZywgdHlwZSkgewogIGF3YWl0IHBvb2wucXVlcnkoCiAgICBgSU5TRVJUIElOVE8gYXJ0aWNsZXMgKHNpdGUsIHR5cGUsIHNob3J0X3RpdGxlLCBsYW5ndWFnZSwgcHVibGlzaGVkX3RpbWUsIG1vZGlmaWVkX3RpbWUsIGltZywgdGl0bGUsIGRlc2NyaXB0aW9uLCB1cmwsIGJvZHkpCiAgICAgVkFMVUVTICgkMSwkMiwkMywkNCxOT1coKSxOT1coKSwkNSwkNiwkNywkOCwkOSlgLAogICAgW2FydC5zaXRlIHx8IFNJVEUsIHR5cGUsIHNsdWcsICdlbicsIGFydC5pbWcsIGFydC50aXRsZSwgYXJ0LmRlc2NyaXB0aW9uLCBhcnQudXJsLCBhcnQuYm9keV0KICApOwp9Cgphc3luYyBmdW5jdGlvbiBwcm9jZXNzVXJsKHVybCwgZXhpc3RpbmdTbHVncykgewogIGNvbnN0IHBhcnNlZCA9IHBhcnNlU2x1Z0FuZFR5cGUodXJsKTsKICBpZiAoIXBhcnNlZCkgeyBzdGF0cy5mYWlsZWQrKzsgcmV0dXJuOyB9CgogIGNvbnN0IGtleSA9IGAke3BhcnNlZC50eXBlfTo6JHtwYXJzZWQuc2x1Z31gOwogIGlmIChleGlzdGluZ1NsdWdzLmhhcyhrZXkpKSB7IHN0YXRzLnNraXBwZWQrKzsgcmV0dXJuOyB9CgogIHRyeSB7CiAgICBjb25zdCBhcnQgPSBhd2FpdCBmZXRjaEFydGljbGUodXJsKTsKICAgIGlmICghYXJ0IHx8ICFhcnQudGl0bGUgfHwgIWFydC5ib2R5KSB7IHN0YXRzLmFwaUVtcHR5Kys7IHJldHVybjsgfQogICAgYXdhaXQgaW5zZXJ0QXJ0aWNsZShhcnQsIHBhcnNlZC5zbHVnLCBwYXJzZWQudHlwZSk7CiAgICBleGlzdGluZ1NsdWdzLmFkZChrZXkpOwogICAgc3RhdHMuaW5zZXJ0ZWQrKzsKICB9IGNhdGNoIChlKSB7CiAgICBzdGF0cy5mYWlsZWQrKzsKICAgIGlmIChzdGF0cy5mYWlsZWQgPD0gMTApIGNvbnNvbGUuZXJyb3IoYCAgRkFJTDogJHt1cmx9IC0gJHtlLm1lc3NhZ2V9YCk7CiAgfQp9Cgphc3luYyBmdW5jdGlvbiBydW5CYXRjaCh1cmxzLCBleGlzdGluZ1NsdWdzKSB7CiAgZm9yIChsZXQgaSA9IDA7IGkgPCB1cmxzLmxlbmd0aDsgaSArPSBDT05DVVJSRU5DWSkgewogICAgY29uc3QgY2h1bmsgPSB1cmxzLnNsaWNlKGksIGkgKyBDT05DVVJSRU5DWSk7CiAgICBhd2FpdCBQcm9taXNlLmFsbChjaHVuay5tYXAodSA9PiBwcm9jZXNzVXJsKHUsIGV4aXN0aW5nU2x1Z3MpKSk7CiAgfQp9Cgphc3luYyBmdW5jdGlvbiBsb2FkRXhpc3RpbmdTbHVncygpIHsKICBjb25zdCByb3dzID0gYXdhaXQgcG9vbC5xdWVyeSgKICAgIGBTRUxFQ1QgdHlwZSwgc2hvcnRfdGl0bGUgRlJPTSBhcnRpY2xlcyBXSEVSRSBzaXRlID0gJDFgLAogICAgW1NJVEVdCiAgKTsKICBjb25zdCBzZXQgPSBuZXcgU2V0KCk7CiAgcm93cy5yb3dzLmZvckVhY2gociA9PiBzZXQuYWRkKGAke3IudHlwZX06OiR7ci5zaG9ydF90aXRsZX1gKSk7CiAgY29uc29sZS5sb2coYOW3suaciSAke3NldC5zaXplfSDnr4fmlofnq6DvvIzlsIbot7Pov4fph43lpI1gKTsKICByZXR1cm4gc2V0Owp9Cgphc3luYyBmdW5jdGlvbiBtYWluKCkgewogIGNvbnN0IHN0YXJ0QXJnID0gcGFyc2VJbnQocHJvY2Vzcy5hcmd2WzJdKSB8fCAxOwogIGNvbnN0IGVuZEFyZyA9IHBhcnNlSW50KHByb2Nlc3MuYXJndlszXSkgfHwgOTk5OwoKICBjb25zb2xlLmxvZyhgPT09IOaJuemHj+WvvOWFpSAke1NJVEV9IOaWh+eroCA9PT1gKTsKICBjb25zb2xlLmxvZyhgU2l0ZW1hcCDojIPlm7Q6ICR7c3RhcnRBcmd9IC0gJHtlbmRBcmd9LCDlubblj5E6ICR7Q09OQ1VSUkVOQ1l9XG5gKTsKCiAgY29uc3QgZXhpc3RpbmdTbHVncyA9IGF3YWl0IGxvYWRFeGlzdGluZ1NsdWdzKCk7CgogIC8vIOiOt+WPliBzaXRlbWFwIGluZGV4CiAgY29uc3QgaW5kZXhSZXMgPSBhd2FpdCBodHRwR2V0KFNJVEVNQVBfSU5ERVgpOwogIGNvbnN0IHNpdGVtYXBVcmxzID0gZXh0cmFjdFVybHMoaW5kZXhSZXMuYm9keSk7CiAgY29uc29sZS5sb2coYOWFsSAke3NpdGVtYXBVcmxzLmxlbmd0aH0g5Liq5a2QIHNpdGVtYXBcbmApOwoKICBmb3IgKGxldCBpID0gMDsgaSA8IHNpdGVtYXBVcmxzLmxlbmd0aDsgaSsrKSB7CiAgICBjb25zdCBzaXRlbWFwTnVtID0gaSArIDE7CiAgICBpZiAoc2l0ZW1hcE51bSA8IHN0YXJ0QXJnIHx8IHNpdGVtYXBOdW0gPiBlbmRBcmcpIGNvbnRpbnVlOwoKICAgIGNvbnN0IHNpdGVtYXBVcmwgPSBzaXRlbWFwVXJsc1tpXTsKICAgIHByb2Nlc3Muc3Rkb3V0LndyaXRlKGBbU2l0ZW1hcCAke3NpdGVtYXBOdW19LyR7c2l0ZW1hcFVybHMubGVuZ3RofV0g5Yqg6L295LitLi4uYCk7CgogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgaHR0cEdldChzaXRlbWFwVXJsKTsKICAgICAgY29uc3QgdXJscyA9IGV4dHJhY3RVcmxzKHJlcy5ib2R5KTsKICAgICAgc3RhdHMudG90YWwgKz0gdXJscy5sZW5ndGg7CiAgICAgIGNvbnNvbGUubG9nKGAgJHt1cmxzLmxlbmd0aH0g5LiqIFVSTGApOwoKICAgICAgY29uc3QgYmVmb3JlSW5zZXJ0ZWQgPSBzdGF0cy5pbnNlcnRlZDsKICAgICAgYXdhaXQgcnVuQmF0Y2godXJscywgZXhpc3RpbmdTbHVncyk7CgogICAgICBjb25zdCBuZXdJbnNlcnRlZCA9IHN0YXRzLmluc2VydGVkIC0gYmVmb3JlSW5zZXJ0ZWQ7CiAgICAgIGNvbnNvbGUubG9nKGAgIOKckyDmlrDlop4gJHtuZXdJbnNlcnRlZH0gfCDot7Pov4cgJHtzdGF0cy5za2lwcGVkfSB8IOWksei0pSAke3N0YXRzLmZhaWxlZH0gfCBBUEnnqbogJHtzdGF0cy5hcGlFbXB0eX0gfCDntK/orqHlhpnlhaUgJHtzdGF0cy5pbnNlcnRlZH1cbmApOwogICAgfSBjYXRjaCAoZSkgewogICAgICBjb25zb2xlLmxvZyhgIOWKoOi9veWksei0pTogJHtlLm1lc3NhZ2V9YCk7CiAgICB9CiAgfQoKICBjb25zb2xlLmxvZygnXG49PT0g5a6M5oiQID09PScpOwogIGNvbnNvbGUubG9nKGDmgLtVUkw6ICR7c3RhdHMudG90YWx9IHwg5YaZ5YWlOiAke3N0YXRzLmluc2VydGVkfSB8IOi3s+i/hzogJHtzdGF0cy5za2lwcGVkfSB8IOWksei0pTogJHtzdGF0cy5mYWlsZWR9IHwgQVBJ56m6OiAke3N0YXRzLmFwaUVtcHR5fWApOwoKICBhd2FpdCBwb29sLmVuZCgpOwp9CgptYWluKCkuY2F0Y2goZSA9PiB7CiAgY29uc29sZS5lcnJvcignRmF0YWw6JywgZS5tZXNzYWdlKTsKICBwb29sLmVuZCgpOwogIHByb2Nlc3MuZXhpdCgxKTsKfSk7Cg=="}
+const { Pool } = require('pg');
+const https = require('https');
+
+const DB_URL = 'postgresql://neondb_owner:npg_HKw8qxGg5cfj@ep-fancy-leaf-a4zukau9-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require';
+const SITE = 'thelivinglook';
+const SITEMAP_INDEX = `https://www.alibaba.com/sitemap/${SITE}/sitemapindex.xml`;
+const ARTICLE_API = 'https://lifetips.alibaba.com/verticalSite/article.json';
+const CONCURRENCY = 5;
+const BATCH_SIZE = 50;
+
+const pool = new Pool({
+  connectionString: DB_URL,
+  max: 10,
+  ssl: { rejectUnauthorized: false },
+  statement_timeout: 30000,
+});
+
+let stats = { total: 0, inserted: 0, skipped: 0, failed: 0, apiEmpty: 0 };
+
+function httpGet(url) {
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, { timeout: 20000 }, res => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve({ status: res.statusCode, body: data }));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
+  });
+}
+
+function extractUrls(xml) {
+  const urls = [];
+  const re = /<loc>([^<]+)<\/loc>/g;
+  let m;
+  while ((m = re.exec(xml)) !== null) urls.push(m[1]);
+  return urls;
+}
+
+function parseSlugAndType(url) {
+  const parts = new URL(url).pathname.split('/').filter(Boolean);
+  if (parts.length >= 2) {
+    return { type: parts[parts.length - 2], slug: parts[parts.length - 1] };
+  }
+  return null;
+}
+
+async function fetchArticle(url) {
+  const key = `${SITE}||${url}`;
+  const apiUrl = `${ARTICLE_API}?key=${encodeURIComponent(key)}`;
+  const res = await httpGet(apiUrl);
+  if (res.status !== 200) return null;
+  try {
+    return JSON.parse(res.body);
+  } catch {
+    return null;
+  }
+}
+
+async function insertArticle(art, slug, type) {
+  await pool.query(
+    `INSERT INTO articles (site, type, short_title, language, published_time, modified_time, img, title, description, url, body)
+     VALUES ($1,$2,$3,$4,NOW(),NOW(),$5,$6,$7,$8,$9)`,
+    [art.site || SITE, type, slug, 'en', art.img, art.title, art.description, art.url, art.body]
+  );
+}
+
+async function processUrl(url, existingSlugs) {
+  const parsed = parseSlugAndType(url);
+  if (!parsed) { stats.failed++; return; }
+
+  const key = `${parsed.type}::${parsed.slug}`;
+  if (existingSlugs.has(key)) { stats.skipped++; return; }
+
+  try {
+    const art = await fetchArticle(url);
+    if (!art || !art.title || !art.body) { stats.apiEmpty++; return; }
+    await insertArticle(art, parsed.slug, parsed.type);
+    existingSlugs.add(key);
+    stats.inserted++;
+  } catch (e) {
+    stats.failed++;
+    if (stats.failed <= 10) console.error(`  FAIL: ${url} - ${e.message}`);
+  }
+}
+
+async function runBatch(urls, existingSlugs) {
+  for (let i = 0; i < urls.length; i += CONCURRENCY) {
+    const chunk = urls.slice(i, i + CONCURRENCY);
+    await Promise.all(chunk.map(u => processUrl(u, existingSlugs)));
+  }
+}
+
+async function loadExistingSlugs() {
+  const rows = await pool.query(
+    `SELECT type, short_title FROM articles WHERE site = $1`,
+    [SITE]
+  );
+  const set = new Set();
+  rows.rows.forEach(r => set.add(`${r.type}::${r.short_title}`));
+  console.log(`已有 ${set.size} 篇文章，将跳过重复`);
+  return set;
+}
+
+async function main() {
+  const startArg = parseInt(process.argv[2]) || 1;
+  const endArg = parseInt(process.argv[3]) || 999;
+
+  console.log(`=== 批量导入 ${SITE} 文章 ===`);
+  console.log(`Sitemap 范围: ${startArg} - ${endArg}, 并发: ${CONCURRENCY}\n`);
+
+  const existingSlugs = await loadExistingSlugs();
+
+  // 获取 sitemap index
+  const indexRes = await httpGet(SITEMAP_INDEX);
+  const sitemapUrls = extractUrls(indexRes.body);
+  console.log(`共 ${sitemapUrls.length} 个子 sitemap\n`);
+
+  for (let i = 0; i < sitemapUrls.length; i++) {
+    const sitemapNum = i + 1;
+    if (sitemapNum < startArg || sitemapNum > endArg) continue;
+
+    const sitemapUrl = sitemapUrls[i];
+    process.stdout.write(`[Sitemap ${sitemapNum}/${sitemapUrls.length}] 加载中...`);
+
+    try {
+      const res = await httpGet(sitemapUrl);
+      const urls = extractUrls(res.body);
+      stats.total += urls.length;
+      console.log(` ${urls.length} 个 URL`);
+
+      const beforeInserted = stats.inserted;
+      await runBatch(urls, existingSlugs);
+
+      const newInserted = stats.inserted - beforeInserted;
+      console.log(`  ✓ 新增 ${newInserted} | 跳过 ${stats.skipped} | 失败 ${stats.failed} | API空 ${stats.apiEmpty} | 累计写入 ${stats.inserted}\n`);
+    } catch (e) {
+      console.log(` 加载失败: ${e.message}`);
+    }
+  }
+
+  console.log('\n=== 完成 ===');
+  console.log(`总URL: ${stats.total} | 写入: ${stats.inserted} | 跳过: ${stats.skipped} | 失败: ${stats.failed} | API空: ${stats.apiEmpty}`);
+
+  await pool.end();
+}
+
+main().catch(e => {
+  console.error('Fatal:', e.message);
+  pool.end();
+  process.exit(1);
+});

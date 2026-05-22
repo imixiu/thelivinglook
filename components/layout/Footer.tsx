@@ -1,1 +1,22 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKCmV4cG9ydCBmdW5jdGlvbiBGb290ZXIoKSB7CiAgcmV0dXJuICgKICAgIDxmb290ZXIgY2xhc3NOYW1lPSJzaXRlLWZvb3RlciI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb290ZXItY29udGVudCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvb3Rlci1sb2dvIj4KICAgICAgICAgIDxzcGFuPlRoZUxpdmluZ0xvb2s8L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPG5hdiBjbGFzc05hbWU9ImZvb3Rlci1uYXYiPgogICAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+PExpbmsgaHJlZj0iLyI+SG9tZTwvTGluaz48L2xpPgogICAgICAgICAgICA8bGk+PExpbmsgaHJlZj0iLyNhcnRpY2xlcyI+Q2F0ZWdvcmllczwvTGluaz48L2xpPgogICAgICAgICAgICA8bGk+PExpbmsgaHJlZj0iIyI+QWJvdXQ8L0xpbms+PC9saT4KICAgICAgICAgICAgPGxpPjxMaW5rIGhyZWY9IiMiPlByaXZhY3kgUG9saWN5PC9MaW5rPjwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvbmF2PgogICAgICAgIDxwIGNsYXNzTmFtZT0iY29weXJpZ2h0Ij4mY29weTsgMjAyNiBUaGVMaXZpbmdMb29rLiBBbGwgcmlnaHRzIHJlc2VydmVkLjwvcD4KICAgICAgPC9kaXY+CiAgICA8L2Zvb3Rlcj4KICApOwp9Cg=="}
+import Link from 'next/link';
+
+export function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="footer-content">
+        <div className="footer-logo">
+          <span>TheLivingLook</span>
+        </div>
+        <nav className="footer-nav">
+          <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/#articles">Categories</Link></li>
+            <li><Link href="#">About</Link></li>
+            <li><Link href="#">Privacy Policy</Link></li>
+          </ul>
+        </nav>
+        <p className="copyright">&copy; 2026 TheLivingLook. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}

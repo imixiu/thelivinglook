@@ -1,1 +1,64 @@
-{"data":"Y29uc3QgeyBQb29sIH0gPSByZXF1aXJlKCdwZycpOwpjb25zdCBmcyA9IHJlcXVpcmUoJ2ZzJyk7CmNvbnN0IHBhdGggPSByZXF1aXJlKCdwYXRoJyk7Cgpjb25zdCBEQl9VUkwgPSAncG9zdGdyZXNxbDovL25lb25kYl9vd25lcjpucGdfSEt3OHF4R2c1Y2ZqQGVwLWZhbmN5LWxlYWYtYTR6dWthdTktcG9vbGVyLnVzLWVhc3QtMS5hd3MubmVvbi50ZWNoL25lb25kYj9zc2xtb2RlPXJlcXVpcmUnOwpjb25zdCBbLCwgU0lURV9OQU1FLCBTSVRFX0RJUiwgRE9NQUlOXSA9IHByb2Nlc3MuYXJndjsKY29uc3QgQkFTRV9VUkwgPSBgaHR0cHM6Ly8ke0RPTUFJTn1gOwpjb25zdCBUT0RBWSA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKS5zcGxpdCgnVCcpWzBdOwpjb25zdCBPVVRfRElSID0gYC9yb290L3ZlcmNlbC1wcm9qZWN0LyR7U0lURV9ESVJ9L3B1YmxpYy9zaXRlbWFwYDsKCmNvbnN0IHBvb2wgPSBuZXcgUG9vbCh7IGNvbm5lY3Rpb25TdHJpbmc6IERCX1VSTCwgc3NsOiB7IHJlamVjdFVuYXV0aG9yaXplZDogZmFsc2UgfSwgc3RhdGVtZW50X3RpbWVvdXQ6IDEyMDAwMCB9KTsKCmZ1bmN0aW9uIHhtbEVzY2FwZShzKSB7CiAgcmV0dXJuIFN0cmluZyhzKS5yZXBsYWNlKC8mL2csICcmYW1wOycpLnJlcGxhY2UoLzwvZywgJyZsdDsnKS5yZXBsYWNlKC8+L2csICcmZ3Q7JykucmVwbGFjZSgvIi9nLCAnJnF1b3Q7JykucmVwbGFjZSgvJy9nLCAnJmFwb3M7Jyk7Cn0KCmZ1bmN0aW9uIG1ha2VTaXRlbWFwKHVybHMpIHsKICBjb25zdCBlbnRyaWVzID0gdXJscy5tYXAodSA9PiBgPHVybD5cbjxsb2M+JHt4bWxFc2NhcGUodSl9PC9sb2M+XG48bGFzdG1vZD4ke1RPREFZfTwvbGFzdG1vZD5cbjxjaGFuZ2VmcmVxPndlZWtseTwvY2hhbmdlZnJlcT5cbjwvdXJsPmApLmpvaW4oJ1xuJyk7CiAgcmV0dXJuIGA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PlxuPHVybHNldCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSIgeG1sbnM6eGh0bWw9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPlxuJHtlbnRyaWVzfVxuPC91cmxzZXQ+YDsKfQoKYXN5bmMgZnVuY3Rpb24gbWFpbigpIHsKICBjb25zdCBbYXJ0aWNsZXMsIGF1dGhvcnNdID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgcG9vbC5xdWVyeShgU0VMRUNUIHR5cGUsIHNob3J0X3RpdGxlIEZST00gYXJ0aWNsZXMgV0hFUkUgc2l0ZSA9ICQxIE9SREVSIEJZIGlkYCwgW1NJVEVfTkFNRV0pLAogICAgcG9vbC5xdWVyeShgU0VMRUNUIHNsdWcgRlJPTSBhdXRob3JzIFdIRVJFIHNpdGUgPSAkMSBPUkRFUiBCWSBpZGAsIFtTSVRFX05BTUVdKSwKICBdKTsKCiAgY29uc3QgdXJscyA9IFtdOwogIHVybHMucHVzaChgJHtCQVNFX1VSTH0vYCk7CiAgdXJscy5wdXNoKGAke0JBU0VfVVJMfS9hdXRob3IvdGVhbWApOwogIGZvciAoY29uc3QgeyBzbHVnIH0gb2YgYXV0aG9ycy5yb3dzKSB7CiAgICBpZiAoc2x1ZyAhPT0gJ3RlYW0nKSB1cmxzLnB1c2goYCR7QkFTRV9VUkx9L2F1dGhvci8ke3NsdWd9YCk7CiAgfQogIGNvbnN0IHNlZW5UeXBlcyA9IG5ldyBTZXQoKTsKICBmb3IgKGNvbnN0IHsgdHlwZSB9IG9mIGFydGljbGVzLnJvd3MpIHsKICAgIGlmICh0eXBlICYmICFzZWVuVHlwZXMuaGFzKHR5cGUpKSB7IHNlZW5UeXBlcy5hZGQodHlwZSk7IHVybHMucHVzaChgJHtCQVNFX1VSTH0vJHt0eXBlfWApOyB9CiAgfQogIGZvciAoY29uc3QgeyB0eXBlLCBzaG9ydF90aXRsZSB9IG9mIGFydGljbGVzLnJvd3MpIHsKICAgIHVybHMucHVzaChgJHtCQVNFX1VSTH0vJHt0eXBlID8gYCR7dHlwZX0vJHtzaG9ydF90aXRsZX1gIDogYGFydGljbGVzLyR7c2hvcnRfdGl0bGV9YH1gKTsKICB9CgogIGZzLm1rZGlyU3luYyhPVVRfRElSLCB7IHJlY3Vyc2l2ZTogdHJ1ZSB9KTsKICBmcy5yZWFkZGlyU3luYyhPVVRfRElSKS5mb3JFYWNoKGYgPT4gZnMudW5saW5rU3luYyhwYXRoLmpvaW4oT1VUX0RJUiwgZikpKTsKCiAgY29uc3QgQ0hVTksgPSA1MDAwOwogIGNvbnN0IGZpbGVzID0gW107CiAgZm9yIChsZXQgaSA9IDA7IGkgPCB1cmxzLmxlbmd0aDsgaSArPSBDSFVOSykgewogICAgY29uc3QgbnVtID0gZmlsZXMubGVuZ3RoICsgMTsKICAgIGNvbnN0IGZuYW1lID0gYHNpdGVtYXAke251bX0ueG1sYDsKICAgIGZzLndyaXRlRmlsZVN5bmMocGF0aC5qb2luKE9VVF9ESVIsIGZuYW1lKSwgbWFrZVNpdGVtYXAodXJscy5zbGljZShpLCBpICsgQ0hVTkspKSk7CiAgICBmaWxlcy5wdXNoKGZuYW1lKTsKICAgIGlmIChudW0gJSAxMCA9PT0gMCkgcHJvY2Vzcy5zdGRvdXQud3JpdGUoYCAgJHtudW19IGZpbGVzIHdyaXR0ZW4uLi5cbmApOwogIH0KCiAgY29uc3QgaW5kZXhFbnRyaWVzID0gZmlsZXMubWFwKGYgPT4gYDxzaXRlbWFwPlxuPGxvYz4ke0JBU0VfVVJMfS9zaXRlbWFwLyR7Zn08L2xvYz5cbjxsYXN0bW9kPiR7VE9EQVl9PC9sYXN0bW9kPlxuPC9zaXRlbWFwPmApLmpvaW4oJ1xuJyk7CiAgZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oT1VUX0RJUiwgJ3NpdGVtYXBpbmRleC54bWwnKSwKICAgIGA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PlxuPHNpdGVtYXBpbmRleCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSI+XG4ke2luZGV4RW50cmllc31cbjwvc2l0ZW1hcGluZGV4PmApOwoKICBjb25zb2xlLmxvZyhgVG90YWwgVVJMczogJHt1cmxzLmxlbmd0aH1gKTsKICBjb25zb2xlLmxvZyhgU2l0ZW1hcCBmaWxlczogJHtmaWxlcy5sZW5ndGh9YCk7CiAgYXdhaXQgcG9vbC5lbmQoKTsKfQoKbWFpbigpLmNhdGNoKGUgPT4geyBjb25zb2xlLmVycm9yKGUubWVzc2FnZSk7IHBvb2wuZW5kKCk7IHByb2Nlc3MuZXhpdCgxKTsgfSk7Cg=="}
+const { Pool } = require('pg');
+const fs = require('fs');
+const path = require('path');
+
+const DB_URL = 'postgresql://neondb_owner:npg_HKw8qxGg5cfj@ep-fancy-leaf-a4zukau9-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require';
+const [,, SITE_NAME, SITE_DIR, DOMAIN] = process.argv;
+const BASE_URL = `https://${DOMAIN}`;
+const TODAY = new Date().toISOString().split('T')[0];
+const OUT_DIR = `/root/vercel-project/${SITE_DIR}/public/sitemap`;
+
+const pool = new Pool({ connectionString: DB_URL, ssl: { rejectUnauthorized: false }, statement_timeout: 120000 });
+
+function xmlEscape(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+
+function makeSitemap(urls) {
+  const entries = urls.map(u => `<url>\n<loc>${xmlEscape(u)}</loc>\n<lastmod>${TODAY}</lastmod>\n<changefreq>weekly</changefreq>\n</url>`).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries}\n</urlset>`;
+}
+
+async function main() {
+  const [articles, authors] = await Promise.all([
+    pool.query(`SELECT type, short_title FROM articles WHERE site = $1 ORDER BY id`, [SITE_NAME]),
+    pool.query(`SELECT slug FROM authors WHERE site = $1 ORDER BY id`, [SITE_NAME]),
+  ]);
+
+  const urls = [];
+  urls.push(`${BASE_URL}/`);
+  urls.push(`${BASE_URL}/author/team`);
+  for (const { slug } of authors.rows) {
+    if (slug !== 'team') urls.push(`${BASE_URL}/author/${slug}`);
+  }
+  const seenTypes = new Set();
+  for (const { type } of articles.rows) {
+    if (type && !seenTypes.has(type)) { seenTypes.add(type); urls.push(`${BASE_URL}/${type}`); }
+  }
+  for (const { type, short_title } of articles.rows) {
+    urls.push(`${BASE_URL}/${type ? `${type}/${short_title}` : `articles/${short_title}`}`);
+  }
+
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.readdirSync(OUT_DIR).forEach(f => fs.unlinkSync(path.join(OUT_DIR, f)));
+
+  const CHUNK = 5000;
+  const files = [];
+  for (let i = 0; i < urls.length; i += CHUNK) {
+    const num = files.length + 1;
+    const fname = `sitemap${num}.xml`;
+    fs.writeFileSync(path.join(OUT_DIR, fname), makeSitemap(urls.slice(i, i + CHUNK)));
+    files.push(fname);
+    if (num % 10 === 0) process.stdout.write(`  ${num} files written...\n`);
+  }
+
+  const indexEntries = files.map(f => `<sitemap>\n<loc>${BASE_URL}/sitemap/${f}</loc>\n<lastmod>${TODAY}</lastmod>\n</sitemap>`).join('\n');
+  fs.writeFileSync(path.join(OUT_DIR, 'sitemapindex.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexEntries}\n</sitemapindex>`);
+
+  console.log(`Total URLs: ${urls.length}`);
+  console.log(`Sitemap files: ${files.length}`);
+  await pool.end();
+}
+
+main().catch(e => { console.error(e.message); pool.end(); process.exit(1); });

@@ -1,1 +1,30 @@
-{"data":"ZXhwb3J0IGZ1bmN0aW9uIFF1aWNrVGlwcygpIHsKICByZXR1cm4gKAogICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJxdWljay10aXBzIj4KICAgICAgPGRpdiBjbGFzc05hbWU9InRpcHMtaGVhZGVyIj4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImJhZGdlIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiAnIzAwYThhOCcgfX0+UXVpY2sgRml4ZXM8L3NwYW4+CiAgICAgICAgPGgyPjYwLVNlY29uZCA8YnIgLz5MaWZlIEhhY2tzPC9oMj4KICAgICAgICA8cD5TaG9ydCwgYWN0aW9uYWJsZSB0aXBzIHlvdSBjYW4gdHJ5IHJpZ2h0IG5vdyB0byBzYXZlIHRpbWUgYW5kIGVuZXJneS48L3A+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBjbGFzc05hbWU9InRpcHMtZ3JpZCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InRpcC1pdGVtIj4KICAgICAgICAgIDxoND7wn5KhIFNtZWxseSBTbmVha2Vycz88L2g0PgogICAgICAgICAgPHA+UGxhY2UgZHJ5IHRlYSBiYWdzIGluc2lkZSB5b3VyIHNob2VzIG92ZXJuaWdodCB0byBhYnNvcmIgbW9pc3R1cmUgYW5kIHVucGxlYXNhbnQgb2RvcnMuPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0aXAtaXRlbSI+CiAgICAgICAgICA8aDQ+8J+NiyBNaWNyb3dhdmUgU3RlYW0gQ2xlYW48L2g0PgogICAgICAgICAgPHA+TWljcm93YXZlIGEgYm93bCBvZiB3YXRlciB3aXRoIGxlbW9uIHNsaWNlcyBmb3IgMyBtaW51dGVzLiBUaGUgc3RlYW0gbG9vc2VucyBhbGwgdGhlIGd1bmshPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0aXAtaXRlbSI+CiAgICAgICAgICA8aDQ+8J+NjCBSaXBlbiBCYW5hbmFzIEZhc3Q8L2g0PgogICAgICAgICAgPHA+TmVlZCByaXBlIGJhbmFuYXM/IFB1dCB0aGVtIGluIHRoZSBvdmVuIGF0IDE1MMKwQyBmb3IgMTXigJMzMCBtaW5zIHVudGlsIHRoZSBza2lucyB0dXJuIGJsYWNrLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGlwLWl0ZW0iPgogICAgICAgICAgPGg0PvCflIsgQmF0dGVyeSBDaGVjazwvaDQ+CiAgICAgICAgICA8cD5Ecm9wIGEgYmF0dGVyeSBvbiBhIHRhYmxlLiBJZiBpdCBib3VuY2VzIG9uY2UgYW5kIGZhbGxzLCBpdCZhcG9zO3MgZnVsbC4gSWYgaXQgYm91bmNlcyBtdWx0aXBsZSB0aW1lcywgaXQmYXBvcztzIGVtcHR5LjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L3NlY3Rpb24+CiAgKTsKfQo="}
+export function QuickTips() {
+  return (
+    <section className="quick-tips">
+      <div className="tips-header">
+        <span className="badge" style={{ background: '#00a8a8' }}>Quick Fixes</span>
+        <h2>60-Second <br />Life Hacks</h2>
+        <p>Short, actionable tips you can try right now to save time and energy.</p>
+      </div>
+
+      <div className="tips-grid">
+        <div className="tip-item">
+          <h4>💡 Smelly Sneakers?</h4>
+          <p>Place dry tea bags inside your shoes overnight to absorb moisture and unpleasant odors.</p>
+        </div>
+        <div className="tip-item">
+          <h4>🍋 Microwave Steam Clean</h4>
+          <p>Microwave a bowl of water with lemon slices for 3 minutes. The steam loosens all the gunk!</p>
+        </div>
+        <div className="tip-item">
+          <h4>🍌 Ripen Bananas Fast</h4>
+          <p>Need ripe bananas? Put them in the oven at 150°C for 15–30 mins until the skins turn black.</p>
+        </div>
+        <div className="tip-item">
+          <h4>🔋 Battery Check</h4>
+          <p>Drop a battery on a table. If it bounces once and falls, it&apos;s full. If it bounces multiple times, it&apos;s empty.</p>
+        </div>
+      </div>
+    </section>
+  );
+}

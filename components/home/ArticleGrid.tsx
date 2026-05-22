@@ -1,1 +1,81 @@
-{"data":"J3VzZSBjbGllbnQnOwoKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7CmltcG9ydCB7IEFydGljbGVQcmV2aWV3IH0gZnJvbSAnQC9saWIvdHlwZXMnOwoKaW50ZXJmYWNlIEFydGljbGVHcmlkUHJvcHMgewogIGFydGljbGVzOiBBcnRpY2xlUHJldmlld1tdOwp9Cgpjb25zdCBjYXRlZ29yaWVzID0gWwogIHsga2V5OiAnYWxsJywgbGFiZWw6ICdBbGwnIH0sCiAgeyBrZXk6ICdraXRjaGVuLWhhY2tzJywgbGFiZWw6ICdLaXRjaGVuIEhhY2tzJyB9LAogIHsga2V5OiAnY2xvc2V0LW9yZ2FuaXphdGlvbicsIGxhYmVsOiAnQ2xvc2V0IE9yZ2FuaXphdGlvbicgfSwKICB7IGtleTogJ2Vjby1jbGVhbmluZycsIGxhYmVsOiAnRWNvLUNsZWFuaW5nJyB9LAogIHsga2V5OiAncGxhbnQtY2FyZScsIGxhYmVsOiAnUGxhbnQgQ2FyZScgfSwKICB7IGtleTogJ2xhdW5kcnktc2VjcmV0cycsIGxhYmVsOiAnTGF1bmRyeSBTZWNyZXRzJyB9LAogIHsga2V5OiAndGVjaC1lZmZpY2llbmN5JywgbGFiZWw6ICdUZWNoIEVmZmljaWVuY3knIH0sCl07Cgpjb25zdCBtZXRhTGFiZWxzOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogICdraXRjaGVuLWhhY2tzJzogJ0tpdGNoZW4nLAogICdjbG9zZXQtb3JnYW5pemF0aW9uJzogJ09yZ2FuaXphdGlvbicsCiAgJ2Vjby1jbGVhbmluZyc6ICdDbGVhbmluZycsCiAgJ3BsYW50LWNhcmUnOiAnUGxhbnQgQ2FyZScsCiAgJ2xhdW5kcnktc2VjcmV0cyc6ICdMYXVuZHJ5JywKICAndGVjaC1lZmZpY2llbmN5JzogJ1RlY2ggRWZmaWNpZW5jeScsCn07CgpleHBvcnQgZnVuY3Rpb24gQXJ0aWNsZUdyaWQoeyBhcnRpY2xlcyB9OiBBcnRpY2xlR3JpZFByb3BzKSB7CiAgY29uc3QgW2FjdGl2ZVR5cGUsIHNldEFjdGl2ZVR5cGVdID0gdXNlU3RhdGU8c3RyaW5nPignYWxsJyk7CgogIGNvbnN0IGZpbHRlcmVkQXJ0aWNsZXMgPSBhcnRpY2xlcy5maWx0ZXIoCiAgICAoYXJ0aWNsZSkgPT4gYWN0aXZlVHlwZSA9PT0gJ2FsbCcgfHwgYXJ0aWNsZS50eXBlID09PSBhY3RpdmVUeXBlCiAgKTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ic2VjdGlvbi1pbnRybyI+CiAgICAgICAgPGgyPkV2ZXJ5ZGF5IFdpc2RvbSBmb3IgWW91ciBIb21lPC9oMj4KICAgICAgICA8cD5Gcm9tIGtpdGNoZW4gaGFja3MgdG8gbWluZGZ1bCBvcmdhbml6YXRpb24sIHdlIHByb3ZpZGUgcHJhY3RpY2FsIHRpcHMgdG8gbWFrZSB5b3VyIGhvbWUgbGlmZSBzaW1wbGVyLCBjbGVhbmVyLCBhbmQgbW9yZSBqb3lmdWwuPC9wPgogICAgICA8L3NlY3Rpb24+CgogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9ImNhdGVnb3JpZXMiIGlkPSJhcnRpY2xlcyI+CiAgICAgICAge2NhdGVnb3JpZXMubWFwKChjYXQpID0+ICgKICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAga2V5PXtjYXQua2V5fQogICAgICAgICAgICBjbGFzc05hbWU9e2BjYXQtdGFnJHthY3RpdmVUeXBlID09PSBjYXQua2V5ID8gJyBhY3RpdmUnIDogJyd9YH0KICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0QWN0aXZlVHlwZShjYXQua2V5KX0KICAgICAgICAgID4KICAgICAgICAgICAge2NhdC5sYWJlbH0KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICkpfQogICAgICA8L3NlY3Rpb24+CgogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im1haW4tZmVlZCI+CiAgICAgICAge2ZpbHRlcmVkQXJ0aWNsZXMubWFwKChhcnRpY2xlKSA9PiAoCiAgICAgICAgICA8TGluawogICAgICAgICAgICBrZXk9e2FydGljbGUuaWR9CiAgICAgICAgICAgIGhyZWY9e2AvJHthcnRpY2xlLnR5cGV9LyR7YXJ0aWNsZS5zbHVnfWB9CiAgICAgICAgICAgIHN0eWxlPXt7IHRleHREZWNvcmF0aW9uOiAnbm9uZScsIGNvbG9yOiAnaW5oZXJpdCcsIGRpc3BsYXk6ICdibG9jaycgfX0KICAgICAgICAgID4KICAgICAgICAgICAgPGFydGljbGUgY2xhc3NOYW1lPSJwb3N0LWNhcmQiPgogICAgICAgICAgICAgIHthcnRpY2xlLmltZyA/ICgKICAgICAgICAgICAgICAgIDxpbWcgc3JjPXthcnRpY2xlLmltZ30gYWx0PXthcnRpY2xlLnRpdGxlfSBjbGFzc05hbWU9InBvc3QtaW1nIiAvPgogICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icG9zdC1pbWciIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgYWxpZ25JdGVtczogJ2NlbnRlcicsIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJywgZm9udFNpemU6ICcycmVtJyB9fT4KICAgICAgICAgICAgICAgICAg8J+ThAogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icG9zdC1pbmZvIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0icG9zdC1tZXRhIj57bWV0YUxhYmVsc1thcnRpY2xlLnR5cGVdIHx8IGFydGljbGUudHlwZX08L3NwYW4+CiAgICAgICAgICAgICAgICA8aDM+e2FydGljbGUudGl0bGV9PC9oMz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICAgPC9MaW5rPgogICAgICAgICkpfQogICAgICA8L3NlY3Rpb24+CiAgICA8Lz4KICApOwp9Cg=="}
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { ArticlePreview } from '@/lib/types';
+
+interface ArticleGridProps {
+  articles: ArticlePreview[];
+}
+
+const categories = [
+  { key: 'all', label: 'All' },
+  { key: 'kitchen-hacks', label: 'Kitchen Hacks' },
+  { key: 'closet-organization', label: 'Closet Organization' },
+  { key: 'eco-cleaning', label: 'Eco-Cleaning' },
+  { key: 'plant-care', label: 'Plant Care' },
+  { key: 'laundry-secrets', label: 'Laundry Secrets' },
+  { key: 'tech-efficiency', label: 'Tech Efficiency' },
+];
+
+const metaLabels: Record<string, string> = {
+  'kitchen-hacks': 'Kitchen',
+  'closet-organization': 'Organization',
+  'eco-cleaning': 'Cleaning',
+  'plant-care': 'Plant Care',
+  'laundry-secrets': 'Laundry',
+  'tech-efficiency': 'Tech Efficiency',
+};
+
+export function ArticleGrid({ articles }: ArticleGridProps) {
+  const [activeType, setActiveType] = useState<string>('all');
+
+  const filteredArticles = articles.filter(
+    (article) => activeType === 'all' || article.type === activeType
+  );
+
+  return (
+    <>
+      <section className="section-intro">
+        <h2>Everyday Wisdom for Your Home</h2>
+        <p>From kitchen hacks to mindful organization, we provide practical tips to make your home life simpler, cleaner, and more joyful.</p>
+      </section>
+
+      <section className="categories" id="articles">
+        {categories.map((cat) => (
+          <button
+            key={cat.key}
+            className={`cat-tag${activeType === cat.key ? ' active' : ''}`}
+            onClick={() => setActiveType(cat.key)}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </section>
+
+      <section className="main-feed">
+        {filteredArticles.map((article) => (
+          <Link
+            key={article.id}
+            href={`/${article.type}/${article.slug}`}
+            style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+          >
+            <article className="post-card">
+              {article.img ? (
+                <img src={article.img} alt={article.title} className="post-img" />
+              ) : (
+                <div className="post-img" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem' }}>
+                  📄
+                </div>
+              )}
+              <div className="post-info">
+                <span className="post-meta">{metaLabels[article.type] || article.type}</span>
+                <h3>{article.title}</h3>
+              </div>
+            </article>
+          </Link>
+        ))}
+      </section>
+    </>
+  );
+}

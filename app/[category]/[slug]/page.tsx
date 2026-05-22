@@ -1,1 +1,74 @@
-{"data":"aW1wb3J0IHsgbm90Rm91bmQgfSBmcm9tICduZXh0L25hdmlnYXRpb24nOwppbXBvcnQgdHlwZSB7IE1ldGFkYXRhIH0gZnJvbSAnbmV4dCc7CmltcG9ydCB7IGdldEFydGljbGUsIGdldFJlbGF0ZWRBcnRpY2xlcyB9IGZyb20gJ0AvbGliL3F1ZXJpZXMnOwppbXBvcnQgeyBBcnRpY2xlSGVhZGVyIH0gZnJvbSAnQC9jb21wb25lbnRzL2FydGljbGUvQXJ0aWNsZUhlYWRlcic7CmltcG9ydCB7IEFydGljbGVCb2R5IH0gZnJvbSAnQC9jb21wb25lbnRzL2FydGljbGUvQXJ0aWNsZUJvZHknOwppbXBvcnQgeyBSZWxhdGVkQXJ0aWNsZXMgfSBmcm9tICdAL2NvbXBvbmVudHMvYXJ0aWNsZS9SZWxhdGVkQXJ0aWNsZXMnOwppbXBvcnQgeyBBcnRpY2xlVG9jIH0gZnJvbSAnQC9jb21wb25lbnRzL2FydGljbGUvQXJ0aWNsZVRvYyc7CgppbnRlcmZhY2UgQXJ0aWNsZVBhZ2VQcm9wcyB7CiAgcGFyYW1zOiBQcm9taXNlPHsKICAgIGNhdGVnb3J5OiBzdHJpbmc7CiAgICBzbHVnOiBzdHJpbmc7CiAgfT47Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZW5lcmF0ZU1ldGFkYXRhKHsgcGFyYW1zIH06IEFydGljbGVQYWdlUHJvcHMpOiBQcm9taXNlPE1ldGFkYXRhPiB7CiAgY29uc3QgcmVzb2x2ZWRQYXJhbXMgPSBhd2FpdCBwYXJhbXM7CiAgY29uc3QgYXJ0aWNsZSA9IGF3YWl0IGdldEFydGljbGUocmVzb2x2ZWRQYXJhbXMuY2F0ZWdvcnksIHJlc29sdmVkUGFyYW1zLnNsdWcpOwoKICBpZiAoIWFydGljbGUpIHsKICAgIHJldHVybiB7IHRpdGxlOiAnQXJ0aWNsZSBOb3QgRm91bmQgLSBUaGVMaXZpbmdMb29rJyB9OwogIH0KCiAgcmV0dXJuIHsKICAgIHRpdGxlOiBgJHthcnRpY2xlLnRpdGxlfSAtIFRoZUxpdmluZ0xvb2tgLAogICAgZGVzY3JpcHRpb246IGFydGljbGUuZGVzY3JpcHRpb24sCiAgICBhbHRlcm5hdGVzOiB7CiAgICAgIGNhbm9uaWNhbDogYGh0dHBzOi8vd3d3LnRoZWxpdmluZ2xvb2suY29tLyR7cmVzb2x2ZWRQYXJhbXMuY2F0ZWdvcnl9LyR7cmVzb2x2ZWRQYXJhbXMuc2x1Z31gLAogICAgfSwKICB9Owp9CgpleHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBBcnRpY2xlUGFnZSh7IHBhcmFtcyB9OiBBcnRpY2xlUGFnZVByb3BzKSB7CiAgY29uc3QgcmVzb2x2ZWRQYXJhbXMgPSBhd2FpdCBwYXJhbXM7CiAgY29uc3QgYXJ0aWNsZSA9IGF3YWl0IGdldEFydGljbGUocmVzb2x2ZWRQYXJhbXMuY2F0ZWdvcnksIHJlc29sdmVkUGFyYW1zLnNsdWcpOwoKICBpZiAoIWFydGljbGUpIHsKICAgIG5vdEZvdW5kKCk7CiAgfQoKICBjb25zdCByZWxhdGVkQXJ0aWNsZXMgPSBhd2FpdCBnZXRSZWxhdGVkQXJ0aWNsZXMoYXJ0aWNsZS50eXBlLCBhcnRpY2xlLmlkKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJhcnRpY2xlLWxheW91dCI+CiAgICAgIDxtYWluIGNsYXNzTmFtZT0iYXJ0aWNsZS1tYWluIj4KICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9ImFydGljbGUtY29udGFpbmVyIj4KICAgICAgICAgIDxBcnRpY2xlSGVhZGVyIGFydGljbGU9e2FydGljbGV9IC8+CiAgICAgICAgICA8QXJ0aWNsZUJvZHkgYm9keT17YXJ0aWNsZS5ib2R5fSAvPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImF1dGhvci1zZWN0aW9uLWNhcmQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYXV0aG9yLWF2YXRhci1jb250YWluZXIiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhdXRob3ItYXZhdGFyIiBzdHlsZT17ewogICAgICAgICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLCBhbGlnbkl0ZW1zOiAnY2VudGVyJywganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICAgICAgICAgICAgZm9udFNpemU6ICcycmVtJywgYmFja2dyb3VuZENvbG9yOiAnI2UwZjdmNycsIGNvbG9yOiAnIzAwYThhOCcsCiAgICAgICAgICAgICAgfX0+CiAgICAgICAgICAgICAgICB7YXJ0aWNsZS5hdXRob3IgPyBhcnRpY2xlLmF1dGhvci5jaGFyQXQoMCkudG9VcHBlckNhc2UoKSA6ICdMJ30KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhdXRob3ItaW5mbyI+CiAgICAgICAgICAgICAgPGgzPnthcnRpY2xlLmF1dGhvciB8fCAnVGhlTGl2aW5nTG9vayBUZWFtJ308L2gzPgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iYXV0aG9yLWJpbyI+CiAgICAgICAgICAgICAgICBDb250cmlidXRpbmcgd3JpdGVyIGF0IFRoZUxpdmluZ0xvb2ssIHNoYXJpbmcgcHJhY3RpY2FsIGV2ZXJ5ZGF5IHRpcHMgdG8gbWFrZSB5b3VyIGhvbWUgbGlmZSBzaW1wbGVyLCBjbGVhbmVyLCBhbmQgbW9yZSBqb3lmdWwuCiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvYXJ0aWNsZT4KICAgICAgPC9tYWluPgoKICAgICAgPGFzaWRlIGNsYXNzTmFtZT0iYXJ0aWNsZS1zaWRlYmFyIj4KICAgICAgICA8QXJ0aWNsZVRvYyBib2R5PXthcnRpY2xlLmJvZHl9IC8+CiAgICAgICAgPFJlbGF0ZWRBcnRpY2xlcyBhcnRpY2xlcz17cmVsYXRlZEFydGljbGVzfSAvPgogICAgICA8L2FzaWRlPgogICAgPC9kaXY+CiAgKTsKfQo="}
+import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
+import { getArticle, getRelatedArticles } from '@/lib/queries';
+import { ArticleHeader } from '@/components/article/ArticleHeader';
+import { ArticleBody } from '@/components/article/ArticleBody';
+import { RelatedArticles } from '@/components/article/RelatedArticles';
+import { ArticleToc } from '@/components/article/ArticleToc';
+
+interface ArticlePageProps {
+  params: Promise<{
+    category: string;
+    slug: string;
+  }>;
+}
+
+export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const article = await getArticle(resolvedParams.category, resolvedParams.slug);
+
+  if (!article) {
+    return { title: 'Article Not Found - TheLivingLook' };
+  }
+
+  return {
+    title: `${article.title} - TheLivingLook`,
+    description: article.description,
+    alternates: {
+      canonical: `https://www.thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`,
+    },
+  };
+}
+
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  const resolvedParams = await params;
+  const article = await getArticle(resolvedParams.category, resolvedParams.slug);
+
+  if (!article) {
+    notFound();
+  }
+
+  const relatedArticles = await getRelatedArticles(article.type, article.id);
+
+  return (
+    <div className="article-layout">
+      <main className="article-main">
+        <article className="article-container">
+          <ArticleHeader article={article} />
+          <ArticleBody body={article.body} />
+          <div className="author-section-card">
+            <div className="author-avatar-container">
+              <div className="author-avatar" style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: '2rem', backgroundColor: '#e0f7f7', color: '#00a8a8',
+              }}>
+                {article.author ? article.author.charAt(0).toUpperCase() : 'L'}
+              </div>
+            </div>
+            <div className="author-info">
+              <h3>{article.author || 'TheLivingLook Team'}</h3>
+              <p className="author-bio">
+                Contributing writer at TheLivingLook, sharing practical everyday tips to make your home life simpler, cleaner, and more joyful.
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <aside className="article-sidebar">
+        <ArticleToc body={article.body} />
+        <RelatedArticles articles={relatedArticles} />
+      </aside>
+    </div>
+  );
+}

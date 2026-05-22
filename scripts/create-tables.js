@@ -1,1 +1,37 @@
-{"data":"Y29uc3QgeyBuZW9uIH0gPSByZXF1aXJlKCdAbmVvbmRhdGFiYXNlL3NlcnZlcmxlc3MnKTsKY29uc3QgZnMgPSByZXF1aXJlKCdmcycpOwoKY29uc3Qgc3FsID0gbmVvbihwcm9jZXNzLmVudi5EQVRBQkFTRV9VUkwpOwoKYXN5bmMgZnVuY3Rpb24gY3JlYXRlVGFibGVzKCkgewogIHRyeSB7CiAgICBjb25zdCBzY2hlbWEgPSBmcy5yZWFkRmlsZVN5bmMoJ3NjcmlwdHMvc2NoZW1hLnNxbCcsICd1dGY4Jyk7CiAgICBjb25zb2xlLmxvZygn8J+UpyDliJvlu7rmlbDmja7lupPooaguLi4nKTsKICAgIAogICAgLy8g5bCG5aSa5LiqIFNRTCDor63lj6XliIblvIDmiafooYwKICAgIGNvbnN0IHN0YXRlbWVudHMgPSBzY2hlbWEKICAgICAgLnNwbGl0KCc7JykKICAgICAgLm1hcChzdG10ID0+IHN0bXQudHJpbSgpKQogICAgICAuZmlsdGVyKHN0bXQgPT4gc3RtdC5sZW5ndGggPiAwICYmICFzdG10LnN0YXJ0c1dpdGgoJy0tJykpOwogICAgCiAgICBmb3IgKGNvbnN0IHN0YXRlbWVudCBvZiBzdGF0ZW1lbnRzKSB7CiAgICAgIGlmIChzdGF0ZW1lbnQudHJpbSgpKSB7CiAgICAgICAgY29uc29sZS5sb2coYOaJp+ihjDogJHtzdGF0ZW1lbnQuc3Vic3RyaW5nKDAsIDUwKX0uLi5gKTsKICAgICAgICAvLyDkvb/nlKjmqKHmnb/lrZfnrKbkuLLor63ms5UKICAgICAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBzcWwoW3N0YXRlbWVudF0pOwogICAgICAgIGNvbnNvbGUubG9nKGDinIUg5a6M5oiQYCk7CiAgICAgIH0KICAgIH0KICAgIAogICAgY29uc29sZS5sb2coJ+KchSDooajliJvlu7rmiJDlip/vvIEnKTsKICB9IGNhdGNoIChlcnJvcikgewogICAgY29uc29sZS5lcnJvcign4p2MIOWIm+W7uuihqOWksei0pTonLCBlcnJvci5tZXNzYWdlKTsKICAgIGlmIChlcnJvci5tZXNzYWdlLmluY2x1ZGVzKCdhbHJlYWR5IGV4aXN0cycpKSB7CiAgICAgIGNvbnNvbGUubG9nKCfihLnvuI8gIOihqOW3sue7j+WtmOWcqO+8jOi3s+i/h+WIm+W7uicpOwogICAgfSBlbHNlIHsKICAgICAgdGhyb3cgZXJyb3I7CiAgICB9CiAgfQp9CgpjcmVhdGVUYWJsZXMoKTsK"}
+const { neon } = require('@neondatabase/serverless');
+const fs = require('fs');
+
+const sql = neon(process.env.DATABASE_URL);
+
+async function createTables() {
+  try {
+    const schema = fs.readFileSync('scripts/schema.sql', 'utf8');
+    console.log('🔧 创建数据库表...');
+    
+    // 将多个 SQL 语句分开执行
+    const statements = schema
+      .split(';')
+      .map(stmt => stmt.trim())
+      .filter(stmt => stmt.length > 0 && !stmt.startsWith('--'));
+    
+    for (const statement of statements) {
+      if (statement.trim()) {
+        console.log(`执行: ${statement.substring(0, 50)}...`);
+        // 使用模板字符串语法
+        const result = await sql([statement]);
+        console.log(`✅ 完成`);
+      }
+    }
+    
+    console.log('✅ 表创建成功！');
+  } catch (error) {
+    console.error('❌ 创建表失败:', error.message);
+    if (error.message.includes('already exists')) {
+      console.log('ℹ️  表已经存在，跳过创建');
+    } else {
+      throw error;
+    }
+  }
+}
+
+createTables();

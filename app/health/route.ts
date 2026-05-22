@@ -1,1 +1,12 @@
-{"data":"aW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAnbmV4dC9zZXJ2ZXInOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVCgpIHsKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oewogICAgc3RhdHVzOiAnb2snLAogICAgdGltZXN0YW1wOiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksCiAgICBlbnY6IHsKICAgICAgaGFzRGF0YWJhc2U6ICEhcHJvY2Vzcy5lbnYuREFUQUJBU0VfVVJMLAogICAgICBub2RlRW52OiBwcm9jZXNzLmVudi5OT0RFX0VOViwKICAgIH0KICB9KTsKfQo="}
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  return NextResponse.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    env: {
+      hasDatabase: !!process.env.DATABASE_URL,
+      nodeEnv: process.env.NODE_ENV,
+    }
+  });
+}

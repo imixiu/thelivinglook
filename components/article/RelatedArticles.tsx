@@ -1,1 +1,28 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJzsKaW1wb3J0IHsgQXJ0aWNsZVByZXZpZXcgfSBmcm9tICdAL2xpYi90eXBlcyc7CgppbnRlcmZhY2UgUmVsYXRlZEFydGljbGVzUHJvcHMgewogIGFydGljbGVzOiBBcnRpY2xlUHJldmlld1tdOwp9CgpleHBvcnQgZnVuY3Rpb24gUmVsYXRlZEFydGljbGVzKHsgYXJ0aWNsZXMgfTogUmVsYXRlZEFydGljbGVzUHJvcHMpIHsKICBpZiAoYXJ0aWNsZXMubGVuZ3RoID09PSAwKSByZXR1cm4gbnVsbDsKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzaWRlYmFyLXJlbGF0ZWQtcG9zdHMiPgogICAgICA8aDM+UmVsYXRlZCBBcnRpY2xlczwvaDM+CiAgICAgIHthcnRpY2xlcy5tYXAoKGFydGljbGUpID0+ICgKICAgICAgICA8TGluawogICAgICAgICAga2V5PXthcnRpY2xlLmlkfQogICAgICAgICAgaHJlZj17YC8ke2FydGljbGUudHlwZX0vJHthcnRpY2xlLnNsdWd9YH0KICAgICAgICAgIGNsYXNzTmFtZT0ic2lkZWJhci1yZWxhdGVkLWl0ZW0iCiAgICAgICAgPgogICAgICAgICAge2FydGljbGUuaW1nICYmICgKICAgICAgICAgICAgPGltZyBzcmM9e2FydGljbGUuaW1nfSBhbHQ9e2FydGljbGUudGl0bGV9IC8+CiAgICAgICAgICApfQogICAgICAgICAgPHA+e2FydGljbGUudGl0bGV9PC9wPgogICAgICAgIDwvTGluaz4KICAgICAgKSl9CiAgICA8L2Rpdj4KICApOwp9Cg=="}
+import Link from 'next/link';
+import { ArticlePreview } from '@/lib/types';
+
+interface RelatedArticlesProps {
+  articles: ArticlePreview[];
+}
+
+export function RelatedArticles({ articles }: RelatedArticlesProps) {
+  if (articles.length === 0) return null;
+
+  return (
+    <div className="sidebar-related-posts">
+      <h3>Related Articles</h3>
+      {articles.map((article) => (
+        <Link
+          key={article.id}
+          href={`/${article.type}/${article.slug}`}
+          className="sidebar-related-item"
+        >
+          {article.img && (
+            <img src={article.img} alt={article.title} />
+          )}
+          <p>{article.title}</p>
+        </Link>
+      ))}
+    </div>
+  );
+}

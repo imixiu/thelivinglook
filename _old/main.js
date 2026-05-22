@@ -1,1 +1,36 @@
-{"data":"Ly8g5YiG57G7562b6YCJCmNvbnN0IHRhZ3MgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcudGFnJyk7CmNvbnN0IGNhcmRzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLmNhcmQnKTsKCnRhZ3MuZm9yRWFjaCh0YWcgPT4gewogIHRhZy5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpID0+IHsKICAgIHRhZ3MuZm9yRWFjaCh0ID0+IHQuY2xhc3NMaXN0LnJlbW92ZSgnYWN0aXZlJykpOwogICAgdGFnLmNsYXNzTGlzdC5hZGQoJ2FjdGl2ZScpOwogICAgY29uc3QgZmlsdGVyID0gdGFnLmRhdGFzZXQuZmlsdGVyOwogICAgY2FyZHMuZm9yRWFjaChjYXJkID0+IHsKICAgICAgaWYgKGZpbHRlciA9PT0gJ2FsbCcgfHwgY2FyZC5kYXRhc2V0LmNhdGVnb3J5ID09PSBmaWx0ZXIpIHsKICAgICAgICBjYXJkLmNsYXNzTGlzdC5yZW1vdmUoJ2hpZGRlbicpOwogICAgICB9IGVsc2UgewogICAgICAgIGNhcmQuY2xhc3NMaXN0LmFkZCgnaGlkZGVuJyk7CiAgICAgIH0KICAgIH0pOwogIH0pOwp9KTsKCi8vIOenu+WKqOerr+WvvOiIquWIh+aNogpjb25zdCB0b2dnbGUgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcubmF2LXRvZ2dsZScpOwpjb25zdCBuYXZMaW5rcyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5uYXYtbGlua3MnKTsKaWYgKHRvZ2dsZSAmJiBuYXZMaW5rcykgewogIHRvZ2dsZS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpID0+IHsKICAgIGNvbnN0IG9wZW4gPSBuYXZMaW5rcy5zdHlsZS5kaXNwbGF5ID09PSAnZmxleCc7CiAgICBuYXZMaW5rcy5zdHlsZS5kaXNwbGF5ID0gb3BlbiA/ICdub25lJyA6ICdmbGV4JzsKICAgIG5hdkxpbmtzLnN0eWxlLmZsZXhEaXJlY3Rpb24gPSAnY29sdW1uJzsKICAgIG5hdkxpbmtzLnN0eWxlLnBvc2l0aW9uID0gJ2Fic29sdXRlJzsKICAgIG5hdkxpbmtzLnN0eWxlLnRvcCA9ICc2MHB4JzsKICAgIG5hdkxpbmtzLnN0eWxlLnJpZ2h0ID0gJzIwcHgnOwogICAgbmF2TGlua3Muc3R5bGUuYmFja2dyb3VuZCA9ICcjZmZmJzsKICAgIG5hdkxpbmtzLnN0eWxlLnBhZGRpbmcgPSAnMTZweCAyNHB4JzsKICAgIG5hdkxpbmtzLnN0eWxlLmJvcmRlclJhZGl1cyA9ICcxMnB4JzsKICAgIG5hdkxpbmtzLnN0eWxlLmJveFNoYWRvdyA9ICcwIDRweCAxNnB4IHJnYmEoMCwwLDAsLjEyKSc7CiAgfSk7Cn0K"}
+// 分类筛选
+const tags = document.querySelectorAll('.tag');
+const cards = document.querySelectorAll('.card');
+
+tags.forEach(tag => {
+  tag.addEventListener('click', () => {
+    tags.forEach(t => t.classList.remove('active'));
+    tag.classList.add('active');
+    const filter = tag.dataset.filter;
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// 移动端导航切换
+const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (toggle && navLinks) {
+  toggle.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '60px';
+    navLinks.style.right = '20px';
+    navLinks.style.background = '#fff';
+    navLinks.style.padding = '16px 24px';
+    navLinks.style.borderRadius = '12px';
+    navLinks.style.boxShadow = '0 4px 16px rgba(0,0,0,.12)';
+  });
+}
