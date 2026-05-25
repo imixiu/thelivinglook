@@ -25,5 +25,3 @@ export interface ArticlePreview {
   author: string | null;
   publishDate: string | null;
 }
-
-export type Category = 'all' | 'kitchen-hacks' | 'closet-organization' | 'eco-cleaning' | 'plant-care' | 'laundry-secrets' | 'tech-efficiency' | string;
