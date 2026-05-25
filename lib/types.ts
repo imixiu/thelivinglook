@@ -1,3 +1,5 @@
+export type Category = 'all' | 'sourcing' | 'platforms' | 'logistics' | 'negotiation' | 'trends';
+
 export interface Article {
   id: number;
   slug: string;
@@ -13,8 +15,6 @@ export interface Article {
   language: string | null;
   updatedAt?: string;
 }
-
-export type Category = 'all' | 'kitchen-hacks' | 'closet-organization' | 'eco-cleaning' | 'plant-care' | 'laundry-secrets' | 'tech-efficiency' | string;
 
 export interface ArticlePreview {
   id: number;

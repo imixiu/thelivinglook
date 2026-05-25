@@ -25,14 +25,13 @@ export async function getFeaturedArticle(): Promise<ArticlePreview | null> {
   };
 }
 
-export async function getAllArticles(limit = 24): Promise<ArticlePreview[]> {
+export async function getAllArticles(): Promise<ArticlePreview[]> {
   const rows = await query(`
     SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
     WHERE img IS NOT NULL AND site = 'thelivinglook'
     ORDER BY published_time DESC
-    LIMIT $1
-  `, [limit]);
+  `);
 
   return rows.map((row: any) => ({
     id: row.id,
