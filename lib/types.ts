@@ -14,6 +14,8 @@ export interface Article {
   updatedAt?: string;
 }
 
+export type Category = 'all' | 'kitchen-hacks' | 'closet-organization' | 'eco-cleaning' | 'plant-care' | 'laundry-secrets' | 'tech-efficiency' | string;
+
 export interface ArticlePreview {
   id: number;
   slug: string;
