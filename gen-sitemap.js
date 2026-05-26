@@ -21,7 +21,7 @@ function makeSitemap(urls) {
 
 async function main() {
   const [articles, authors] = await Promise.all([
-    pool.query(`SELECT type, short_title FROM articles WHERE site = $1 ORDER BY id`, [SITE_NAME]),
+    pool.query(`SELECT type, short_title FROM articles WHERE site = $1 AND is_online = 'Y' ORDER BY id`, [SITE_NAME]),
     pool.query(`SELECT slug FROM authors WHERE site = $1 ORDER BY id`, [SITE_NAME]),
   ]);
 
