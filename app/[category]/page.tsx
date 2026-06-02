@@ -12,6 +12,15 @@ const categoryLabels: Record<string, string> = {
   'tech-efficiency': 'Tech Efficiency',
 };
 
+const categoryDescriptions: Record<string, string> = {
+  'kitchen-hacks': 'Expert kitchen tips: meal prep workflows, cookware care, food storage, and cooking shortcuts from professional chefs.',
+  'closet-organization': 'Closet and wardrobe organization: decluttering guides, storage solutions, capsule wardrobes, and space-saving systems.',
+  'eco-cleaning': 'Non-toxic cleaning solutions: natural ingredients, green products, and eco-friendly methods for every room in your home.',
+  'plant-care': 'Indoor plant care guides: watering schedules, light requirements, soil tips, and plant selection for every skill level.',
+  'laundry-secrets': 'Laundry care expertise: fabric-specific washing, dryer optimization, stain removal, and garment longevity tips.',
+  'tech-efficiency': 'Smart home and tech guides: energy-saving automations, appliance reviews, and digital tools for efficient living.',
+};
+
 const PAGE_SIZE = 24;
 
 interface Props {
@@ -25,8 +34,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!label) return { title: 'Not Found' };
   return {
     title: `${label} - TheLivingLook`,
-    description: `Articles about ${label}`,
-    alternates: { canonical: `https://www.thelivinglook.com/${category}` },
+    description: categoryDescriptions[category] || `Articles about ${label}`,
+    alternates: { canonical: `https://thelivinglook.com/${category}` },
+    openGraph: {
+      type: 'website',
+      title: `${label} - TheLivingLook`,
+      description: categoryDescriptions[category] || `Articles about ${label}`,
+      url: `https://thelivinglook.com/${category}`,
+      siteName: 'TheLivingLook',
+      locale: 'en_US',
+    },
+    twitter: {
+      card: 'summary',
+      title: `${label} - TheLivingLook`,
+      description: categoryDescriptions[category] || `Articles about ${label}`,
+    },
   };
 }
 

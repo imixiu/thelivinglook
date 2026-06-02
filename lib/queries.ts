@@ -13,7 +13,7 @@ export async function getFeaturedArticle(): Promise<ArticlePreview | null> {
   const rows = await query(
     `SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
-    WHERE short_title = $1 LIMIT 1`,
+    WHERE short_title = $1 AND (is_online IS NULL OR is_online = 'Y') LIMIT 1`,
     ['vinegar-vs-commercial-cleaners-the-real-results']
   );
   if (rows.length === 0) return null;
@@ -29,7 +29,7 @@ export async function getAllArticles(): Promise<ArticlePreview[]> {
   const rows = await query(`
     SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
-    WHERE img IS NOT NULL AND site = 'thelivinglook'
+    WHERE img IS NOT NULL AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')
     ORDER BY published_time DESC
   `);
 
@@ -48,8 +48,8 @@ export async function getAllArticles(): Promise<ArticlePreview[]> {
 
 export async function getArticle(type: string, slug: string): Promise<Article | null> {
   const rows = await query(
-    'SELECT * FROM articles WHERE type = $1 AND short_title = $2 LIMIT 1',
-    [type, slug]
+    'SELECT * FROM articles WHERE type = $1 AND short_title = $2 AND site = $3 AND (is_online IS NULL OR is_online = \'Y\') LIMIT 1',
+    [type, slug, 'thelivinglook']
   );
 
   if (rows.length === 0) {
@@ -79,10 +79,10 @@ export async function getArticlesByType(type: string, page = 1, pageSize = 24): 
   const [rows, countRows] = await Promise.all([
     query(
       `SELECT id, short_title, site, type, title, description, img, author, published_time
-      FROM articles WHERE type = $1 AND site = 'thelivinglook' ORDER BY published_time DESC LIMIT $2 OFFSET $3`,
+      FROM articles WHERE type = $1 AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y') ORDER BY published_time DESC LIMIT $2 OFFSET $3`,
       [type, pageSize, offset]
     ),
-    query(`SELECT COUNT(*) as total FROM articles WHERE type = $1 AND site = 'thelivinglook'`, [type]),
+    query(`SELECT COUNT(*) as total FROM articles WHERE type = $1 AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')`, [type]),
   ]);
   return {
     articles: rows.map((row: any) => ({
@@ -98,7 +98,7 @@ export async function getRelatedArticles(type: string, excludeId: number): Promi
   const rows = await query(
     `SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
-    WHERE type = $1 AND id != $2 AND site = 'thelivinglook'
+    WHERE type = $1 AND id != $2 AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')
     ORDER BY published_time DESC
     LIMIT 3`,
     [type, excludeId]

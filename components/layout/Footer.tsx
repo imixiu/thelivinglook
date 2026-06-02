@@ -11,8 +11,8 @@ export function Footer() {
           <ul>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/#articles">Categories</Link></li>
-            <li><Link href="#">About</Link></li>
-            <li><Link href="#">Privacy Policy</Link></li>
+            <li><Link href="/kitchen-hacks">Kitchen Hacks</Link></li>
+            <li><Link href="/eco-cleaning">Eco Cleaning</Link></li>
           </ul>
         </nav>
         <p className="copyright">&copy; 2026 TheLivingLook. All rights reserved.</p>

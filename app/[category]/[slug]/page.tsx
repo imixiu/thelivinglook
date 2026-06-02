@@ -21,11 +21,32 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     return { title: 'Article Not Found - TheLivingLook' };
   }
 
+  const url = `https://thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`;
+  const img = article.img || 'https://thelivinglook.com/og-default.jpg';
+
   return {
     title: `${article.title} - TheLivingLook`,
     description: article.description,
+    authors: article.author ? [{ name: article.author }] : [{ name: 'TheLivingLook Team' }],
     alternates: {
-      canonical: `https://www.thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`,
+      canonical: url,
+    },
+    openGraph: {
+      type: 'article',
+      title: article.title,
+      description: article.description || '',
+      url,
+      images: [{ url: img, width: 1200, height: 630, alt: article.title }],
+      siteName: 'TheLivingLook',
+      locale: 'en_US',
+      publishedTime: article.publishDate || undefined,
+      modifiedTime: article.updatedAt || undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.description || '',
+      images: [img],
     },
   };
 }
@@ -40,8 +61,37 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   const relatedArticles = await getRelatedArticles(article.type, article.id);
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    image: article.img || undefined,
+    url: `https://thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`,
+    datePublished: article.publishDate || undefined,
+    dateModified: article.updatedAt || undefined,
+    author: {
+      '@type': article.author ? 'Person' : 'Organization',
+      name: article.author || 'TheLivingLook Team',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheLivingLook',
+      logo: { '@type': 'ImageObject', url: 'https://thelivinglook.com/logo.png' },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`,
+    },
+  };
+
   return (
-    <div className="article-layout">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="article-layout">
       <main className="article-main">
         <article className="article-container">
           <ArticleHeader article={article} />
@@ -70,5 +120,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <RelatedArticles articles={relatedArticles} />
       </aside>
     </div>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { query } from '@/lib/db';
 
-const SITE_URL = 'https://www.thelivinglook.com';
+const SITE_URL = 'https://thelivinglook.com';
 const ARTICLES_PER_SITEMAP = 50000;
 
 export const revalidate = 3600; // Revalidate every hour
