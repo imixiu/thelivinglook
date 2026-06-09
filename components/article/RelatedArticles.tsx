@@ -18,7 +18,7 @@ export function RelatedArticles({ articles }: RelatedArticlesProps) {
           className="sidebar-related-item"
         >
           {article.img && (
-            <img src={article.img} alt={article.title} />
+            <img src={article.img} alt={article.title} loading="lazy" width={80} height={80} />
           )}
           <p>{article.title}</p>
         </Link>

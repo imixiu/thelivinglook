@@ -62,7 +62,7 @@ export function ArticleGrid({ articles }: ArticleGridProps) {
           >
             <article className="post-card">
               {article.img ? (
-                <img src={article.img} alt={article.title} className="post-img" />
+                <img src={article.img} alt={article.title} className="post-img" loading="lazy" width={400} height={225} />
               ) : (
                 <div className="post-img" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem' }}>
                   📄

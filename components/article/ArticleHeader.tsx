@@ -23,7 +23,15 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         )}
       </div>
       {article.img && (
-        <img src={article.img} alt={article.title} />
+        <img
+          src={article.img}
+          alt={article.title}
+          fetchPriority="high"
+          loading="eager"
+          width={800}
+          height={450}
+          style={{ width: '100%', height: 'auto' }}
+        />
       )}
     </div>
   );

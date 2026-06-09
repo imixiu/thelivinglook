@@ -3,6 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getArticlesByType } from '@/lib/queries';
 
+export const revalidate = 3600;
+
 const categoryLabels: Record<string, string> = {
   'kitchen-hacks': 'Kitchen Hacks',
   'closet-organization': 'Closet Organization',
@@ -74,7 +76,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             style={{ textDecoration: 'none', color: 'inherit', background: '#fff', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 10px rgba(0,0,0,0.08)', display: 'block' }}
           >
             {article.img && (
-              <img src={article.img} alt={article.title} style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} />
+              <img src={article.img} alt={article.title} loading="lazy" width={400} height={180} style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} />
             )}
             <div style={{ padding: 16 }}>
               <h2 style={{ fontSize: '1rem', marginBottom: 8, lineHeight: 1.4 }}>{article.title}</h2>

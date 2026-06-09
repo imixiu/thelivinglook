@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getArticle, getRelatedArticles } from '@/lib/queries';
+
+export const revalidate = 86400;
 import { ArticleHeader } from '@/components/article/ArticleHeader';
 import { ArticleBody } from '@/components/article/ArticleBody';
 import { RelatedArticles } from '@/components/article/RelatedArticles';

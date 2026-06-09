@@ -4,7 +4,7 @@ import { query } from '@/lib/db';
 const SITE_URL = 'https://thelivinglook.com';
 const ARTICLES_PER_SITEMAP = 50000;
 
-export const revalidate = 3600; // Revalidate every hour
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   // Get total count of online articles
