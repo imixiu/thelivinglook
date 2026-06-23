@@ -4,10 +4,14 @@ import { Article, ArticlePreview } from './types';
 
 function formatDate(date: any): string | null {
   if (!date) return null;
-  if (date instanceof Date) {
+  // Handle Date objects (including cross-realm from neon serverless driver)
+  if (typeof date === 'object' && typeof date.toISOString === 'function') {
     return date.toISOString().split('T')[0];
   }
-  return String(date).split('T')[0];
+  // For strings, extract YYYY-MM-DD prefix
+  const str = String(date);
+  const match = str.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : null;
 }
 
 export async function getFeaturedArticle(): Promise<ArticlePreview | null> {
