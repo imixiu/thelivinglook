@@ -1,11 +1,13 @@
-import { readFile } from "fs/promises";
-import path from "path";
+import { INDEX_HTML } from "@/lib/index-html";
+
+export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const filePath = path.join(process.cwd(), "public", "index.html");
-  const html = await readFile(filePath, "utf-8");
-  return new Response(html, {
+  return new Response(INDEX_HTML, {
     status: 200,
-    headers: { "Content-Type": "text/html; charset=utf-8" },
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+    },
   });
 }

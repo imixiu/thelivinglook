@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+// Auto-generated: inline index.html for Cloudflare Workers
+export const INDEX_HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google Analytics -->
@@ -1285,7 +1286,7 @@
                     countersAnimated = true;
                     document.querySelectorAll('.stat-number').forEach(function(el) {
                         var text = el.textContent;
-                        var match = text.match(/([\d,]+)/);
+                        var match = text.match(/([\\d,]+)/);
                         if (!match) return;
                         var target = parseInt(match[1].replace(/,/g, ''));
                         var suffix = text.substring(text.indexOf(match[1]) + match[1].length);
@@ -1319,4 +1320,4 @@
         }
     </script>
 </body>
-</html>
+</html>`;
