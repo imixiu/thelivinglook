@@ -6,6 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
+    "pages:build": "npx @opennextjs/cloudflare build",
+    "pages:deploy": "npx @opennextjs/cloudflare deploy",
     "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
