@@ -1,36 +1,35 @@
-import { neon, neonConfig } from '@neondatabase/serverless';
+import * as mysql from "mysql2/promise";
 
-neonConfig.fetchConnectionCache = true;
-// Use fetch-based HTTP transport so Next.js can track and cache data requests
-neonConfig.fetchFunction = (url: string, init?: RequestInit) =>
-  fetch(url, { ...init, cache: 'no-store' });
-
-function getDatabaseUrl(): string {
-  if (process.env.DATABASE_URL) {
-    return process.env.DATABASE_URL;
-  }
-
-  const {
-    PGUSER = 'postgres',
-    PGPASSWORD = '',
-    PGHOST,
-    PGPORT = '5432',
-    PGDATABASE = 'postgres',
-  } = process.env;
-
-  if (!PGHOST) {
-    throw new Error('Database configuration missing: PGHOST or DATABASE_URL is required');
-  }
-
-  const password = PGPASSWORD ? `:${PGPASSWORD}` : '';
-  return `postgresql://${PGUSER}${password}@${PGHOST}:${PGPORT}/${PGDATABASE}?sslmode=require`;
+function getConnectionConfig() {
+  const url = process.env.MYSQL_URL;
+  if (!url) throw new Error("MYSQL_URL is not set");
+  const u = new URL(url);
+  return {
+    host: u.hostname,
+    port: parseInt(u.port || "3306"),
+    user: decodeURIComponent(u.username),
+    password: decodeURIComponent(u.password),
+    database: u.pathname.replace(/^\//, ""),
+    connectTimeout: 10000,
+    disableEval: true,
+  };
 }
 
-const sql = neon(getDatabaseUrl());
-
 export async function query(text: string, params?: any[]): Promise<any> {
-  if (params && params.length > 0) {
-    return await sql.query(text, params);
+  const conn = await mysql.createConnection(getConnectionConfig());
+  try {
+    // Convert $1, $2 style to ? for MySQL
+    let sql = text;
+    if (params && params.length > 0) {
+      sql = text.replace(/\$(\d+)/g, '?');
+      const [rows] = await conn.query(sql, params);
+      if (Array.isArray(rows)) return rows.map((row: any) => ({ ...row }));
+      return [rows];
+    }
+    const [rows] = await conn.query(sql);
+    if (Array.isArray(rows)) return rows.map((row: any) => ({ ...row }));
+    return [rows];
+  } finally {
+    await conn.end();
   }
-  return await sql.query(text);
 }
