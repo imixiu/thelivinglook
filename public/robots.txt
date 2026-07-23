@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /*.js$
 Allow: /
+Disallow: /*.js$
 
 Sitemap: https://thelivinglook.com/sitemap/sitemapindex.xml

@@ -24,7 +24,8 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   }
 
   const url = `https://thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`;
-  const img = article.img || 'https://thelivinglook.com/og-default.jpg';
+  const defaultImg = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop';
+  const img = (article.img && !article.img.includes('alicdn.com')) ? article.img : defaultImg;
 
   return {
     title: `${article.title} - TheLivingLook`,
@@ -68,7 +69,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     '@type': 'Article',
     headline: article.title,
     description: article.description,
-    image: article.img || undefined,
+    image: (article.img && !article.img.includes('alicdn.com')) ? article.img : 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop',
     url: `https://thelivinglook.com/${resolvedParams.category}/${resolvedParams.slug}`,
     datePublished: article.publishDate || undefined,
     dateModified: article.updatedAt || undefined,

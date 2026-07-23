@@ -27,7 +27,7 @@ export const INDEX_HTML = `<!DOCTYPE html>
     <meta name="twitter:title" content="TheLivingLook — Smart Solutions for Everyday Living">
     <meta name="twitter:description" content="Practical tips on kitchen hacks, organization, cleaning, plant care, and tech efficiency.">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+    <link rel="icon" href="/icon.png?v=2" type="image/png"><text y='.9em' font-size='90'>💡</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -945,7 +945,7 @@ export const INDEX_HTML = `<!DOCTYPE html>
         <!-- Hero -->
         <section class="hero" aria-labelledby="hero-heading">
             <div class="hero-bg">
-                <img src="https://img.alicdn.com/imgextra/i2/O1CN01iviRWa1rO10RNerxa_!!6000000005620-0-tps-800-533.jpg" alt="A beautifully organized home workspace with plants and natural light" width="1600" height="900">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=533&fit=crop" alt="A beautifully organized home workspace with plants and natural light" width="1600" height="900">
             </div>
             <div class="hero-overlay"></div>
             <div class="container hero-content">
@@ -1057,7 +1057,7 @@ export const INDEX_HTML = `<!DOCTYPE html>
             <div class="container">
                 <div class="editorial-grid">
                     <div class="editorial-image">
-                        <img src="https://img.alicdn.com/imgextra/i2/O1CN01iviRWa1rO10RNerxa_!!6000000005620-0-tps-800-533.jpg" alt="A tidy kitchen with fresh herbs and natural cleaning supplies" width="800" height="600" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=533&fit=crop" alt="A tidy kitchen with fresh herbs and natural cleaning supplies" width="800" height="600" loading="lazy">
                     </div>
                     <div class="editorial-content">
                         <span class="section-tag">Featured Guide</span>
@@ -1231,7 +1231,7 @@ export const INDEX_HTML = `<!DOCTYPE html>
             </div>
             <div class="footer-bottom">
                 <span>&copy; 2026 TheLivingLook. All rights reserved.</span>
-                <span><a href="/sitemap.xml">Sitemap</a> &middot; <a href="/terms-of-service.html">Terms</a> &middot; <a href="/privacy-policy.html">Privacy</a></span>
+                <span><a href="/sitemap/sitemapindex.xml">Sitemap</a> &middot; <a href="/terms-of-service.html">Terms</a> &middot; <a href="/privacy-policy.html">Privacy</a></span>
             </div>
         </div>
     </footer>
@@ -1286,7 +1286,7 @@ export const INDEX_HTML = `<!DOCTYPE html>
                     countersAnimated = true;
                     document.querySelectorAll('.stat-number').forEach(function(el) {
                         var text = el.textContent;
-                        var match = text.match(/([\\d,]+)/);
+                        var match = text.match(/([\d,]+)/);
                         if (!match) return;
                         var target = parseInt(match[1].replace(/,/g, ''));
                         var suffix = text.substring(text.indexOf(match[1]) + match[1].length);

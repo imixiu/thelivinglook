@@ -1,4 +1,4 @@
-import { cacheGet, cacheSet } from './redis';
+import { tairGet } from "./tair";
 import { query } from './db';
 import { Article, ArticlePreview } from './types';
 
@@ -18,7 +18,7 @@ export async function getFeaturedArticle(): Promise<ArticlePreview | null> {
   const rows = await query(
     `SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
-    WHERE short_title = ? AND (is_online IS NULL OR is_online = 'Y') LIMIT 1`,
+    WHERE short_title = ? AND is_online = 'Y' LIMIT 1`,
     ['vinegar-vs-commercial-cleaners-the-real-results']
   );
   if (rows.length === 0) return null;
@@ -34,7 +34,7 @@ export async function getAllArticles(): Promise<ArticlePreview[]> {
   const rows = await query(`
     SELECT id, short_title, site, type, title, description, img, author, published_time
     FROM articles
-    WHERE img IS NOT NULL AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')
+    WHERE img IS NOT NULL AND site = 'thelivinglook' AND is_online = 'Y'
     ORDER BY published_time DESC
   `);
 
@@ -52,12 +52,12 @@ export async function getAllArticles(): Promise<ArticlePreview[]> {
 }
 
 export async function getArticle(type: string, slug: string): Promise<Article | null> {
-  const key = `article:${type}:${slug}`;
-  const cached = await cacheGet(key);
+  const key = `thelivinglook:article:${type}:${slug}`;
+  const cached = await tairGet(key);
   if (cached) return cached;
 
   const rows = await query(
-    'SELECT * FROM articles WHERE type = ? AND short_title = ? AND site = ? AND (is_online IS NULL OR is_online = \'Y\') LIMIT 1',
+    'SELECT * FROM articles WHERE type = ? AND short_title = ? AND site = ? AND is_online = \'Y\' LIMIT 1',
     [type, slug, 'thelivinglook']
   );
   if (rows.length === 0) return null;
@@ -69,25 +69,21 @@ export async function getArticle(type: string, slug: string): Promise<Article | 
     body: row.body, url: row.url, language: row.language,
     updatedAt: row.modified_time ? formatDate(row.modified_time) ?? undefined : undefined,
   };
-  await cacheSet(key, article, 0);
+
   return article;
 }
 
 export async function getArticlesByType(type: string, page = 1, pageSize = 24): Promise<{ articles: ArticlePreview[]; total: number }> {
-  const key = `articles-by-type:${type}:${page}:${pageSize}`;
-  const cached = await cacheGet(key);
-  if (cached) return cached;
-
   const offset = (page - 1) * pageSize;
   const [rows, countRows] = await Promise.all([
     query(
       `SELECT id, short_title, site, type, title, description, img, author, published_time
-      FROM articles WHERE type = ? AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y') ORDER BY published_time DESC LIMIT ? OFFSET ?`,
+      FROM articles WHERE type = ? AND site = 'thelivinglook' AND is_online = 'Y' ORDER BY published_time DESC LIMIT ? OFFSET ?`,
       [type, pageSize, offset]
     ),
-    query(`SELECT COUNT(*) as total FROM articles WHERE type = ? AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')`, [type]),
+    query(`SELECT COUNT(*) as total FROM articles WHERE type = ? AND site = 'thelivinglook' AND is_online = 'Y'`, [type]),
   ]);
-  const result = {
+  return {
     articles: rows.map((row: any) => ({
       id: row.id, slug: row.short_title, site: row.site, type: row.type,
       title: row.title, description: row.description, img: row.img,
@@ -95,8 +91,6 @@ export async function getArticlesByType(type: string, page = 1, pageSize = 24): 
     })),
     total: parseInt(countRows[0].total),
   };
-  await cacheSet(key, result, 259200);
-  return result;
 }
 
 type RelatedItem = { id: number; slug: string; type: string; title: string; img: string | null };
@@ -113,19 +107,30 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 }
 
 export async function getRelatedArticles(type: string, excludeId: number): Promise<ArticlePreview[]> {
-  const key = `related:${type}`;
-  const cached = await cacheGet(key);
-  const pool: RelatedItem[] = cached ?? await (async () => {
-    const rows = await query(
-      `SELECT id, short_title, type, title, img
-      FROM articles
-      WHERE type = ? AND site = 'thelivinglook' AND (is_online IS NULL OR is_online = 'Y')
-      ORDER BY published_time DESC LIMIT 200`,
-      [type]
-    );
-    const result = rows.map((row: any) => ({ id: row.id, slug: row.short_title, type: row.type, title: row.title, img: row.img }));
-    await cacheSet(key, result, 259200);
-    return result;
-  })();
-  return seededShuffle(pool.filter((a) => a.id !== excludeId), excludeId).slice(0, 3) as unknown as ArticlePreview[];
+  // 优化：避免 ORDER BY published_time DESC 全表扫描
+  // 第一步：用索引快速查候选 ID
+  const idRows = await query(
+    `SELECT id FROM articles WHERE site = 'thelivinglook' AND type = ? AND is_online = 'Y'`,
+    [type]
+  );
+
+  if (idRows.length === 0) return [];
+
+  // 第二步：应用层 seeded shuffle 选 3 篇（排除当前文章）
+  const ids = (idRows as any[]).map(r => r.id).filter(id => id !== excludeId);
+  const shuffled = seededShuffle(ids, excludeId).slice(0, 3);
+
+  if (shuffled.length === 0) return [];
+
+  // 第三步：主键精确查详情
+  const placeholders = shuffled.map(() => '?').join(',');
+  const rows = await query(
+    `SELECT id, short_title, type, title, img FROM articles WHERE id IN (${placeholders})`,
+    shuffled
+  );
+
+  return (rows as any[]).map(row => ({
+    id: row.id, slug: row.short_title, type: row.type,
+    title: row.title, img: row.img,
+  })) as unknown as ArticlePreview[];
 }

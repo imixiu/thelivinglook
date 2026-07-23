@@ -47,8 +47,29 @@ function wrapTables(html: string): string {
   });
 }
 
+// Replace alicdn.com images (from Alibaba import) with Unsplash placeholders
+const FALLBACK_IMAGES = [
+  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1556909172-8c2f3e8f7e48?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1556909190-eccf4a8bf97c?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1556909195-2b8f4e9b6f4c?w=800&h=600&fit=crop',
+  'https://images.unsplash.com/photo-1556909202-f1e1d3e8f7a0?w=800&h=600&fit=crop',
+];
+
+function replaceAlicdnImages(html: string): string {
+  let idx = 0;
+  return html.replace(
+    /https?:\/\/[a-z0-9.-]*alicdn\.com\/[^\s"'<>]+\.(jpg|jpeg|png|webp)/gi,
+    () => {
+      const img = FALLBACK_IMAGES[idx % FALLBACK_IMAGES.length];
+      idx++;
+      return img;
+    }
+  );
+}
+
 export function ArticleBody({ body }: ArticleBodyProps) {
-  const processed = wrapTables(scopeStyles(addHeadingIds(body)));
+  const processed = replaceAlicdnImages(wrapTables(scopeStyles(addHeadingIds(body))));
   return (
     <div className="article-content" dangerouslySetInnerHTML={{ __html: processed }} />
   );
