@@ -7,7 +7,7 @@ export async function GET() {
     status: 200,
     headers: {
       "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+      "Cache-Control": "no-store",
     },
   });
 }

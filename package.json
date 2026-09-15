@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "build:full": "next build --turbopack && npx @opennextjs/cloudflare build && node scripts/postbuild-cache.mjs",
+    "build": "next build && npx @opennextjs/cloudflare build && node scripts/postbuild-cache.mjs",
+    "build:full": "next build --turbopack && npx -y @opennextjs/cloudflare build && node scripts/postbuild-cache.mjs",
     "start": "next start",
-    "pages:build": "npx @opennextjs/cloudflare build",
-    "pages:deploy": "npx @opennextjs/cloudflare deploy",
-    "seed": "tsx scripts/seed.ts"
+    "pages:build": "npx -y @opennextjs/cloudflare build",
+    "pages:deploy": "npx -y @opennextjs/cloudflare deploy",
+    "seed": "tsx scripts/seed.ts",
+    "build:cf": "next build && npx -y @opennextjs/cloudflare build && node scripts/postbuild-cache.mjs"
   },
   "dependencies": {
     "@types/pg": "^8.20.0",
