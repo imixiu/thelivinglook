@@ -1,0 +1,39 @@
+Workers: 3 | Batch: 100 | Max rounds: 3
+
+============================================================
+Round 1/3 — fetching articles without images...
+Found 24 without images | Already done: 60 | To process: 24
+
+  Batch 1/1: 24 articles
+  OK id=16968978 closet-organization/cheap-vs-premium-wheat
+  OK id=16968963 laundry-secrets/chicken-kitchen-hacks-essentia
+  OK id=16968977 tech-efficiency/how-to-choose-practical
+  OK id=16968980 eco-cleaning/how-to-start-plant-care
+  OK id=16968986 laundry-secrets/kitchen-trends-2026
+  OK id=16968987 plant-care/best-focused-zucchini
+  OK id=16968988 kitchen-hacks/eco-cleaning-tools-checklist
+  OK id=17003683 laundry-secrets/best-closet-organization-for-s
+  OK id=17003682 laundry-secrets/balanced-and-bake-compared
+  OK id=17003693 closet-organization/cheap-vs-premium-focused
+  OK id=17003694 closet-organization/ideas-alternatives-to-pasta
+  OK id=17003690 tech-efficiency/daily-closet-organization-esse
+  OK id=17003696 kitchen-hacks/bread-checklist
+  OK id=17003709 eco-cleaning/baking-trends-2026
+  OK id=17003712 kitchen-hacks/cheap-vs-premium-health
+  OK id=17003714 tech-efficiency/energy-for-naturally
+  OK id=17003719 tech-efficiency/best-plant-care-for-nutrient
+  OK id=17003828 eco-cleaning/rice-storage-ideas
+  OK id=17003829 closet-organization/best-eco-cleaning-for-better
+  OK id=17003832 plant-care/best-daily-ideas
+  OK id=17003835 kitchen-hacks/nutrient-laundry-secrets-essen
+  OK id=17003836 laundry-secrets/how-to-start-closet-organizati
+  OK id=17003841 plant-care/diy-zucchini-ideas
+  OK id=17003843 plant-care/diy-chicken-ideas
+  Batch done: 24 ok, 0 fail (cumulative)
+
+  Round 1 complete. Remaining without images: 0
+  All articles have images. Done!
+
+============================================================
+Done! Success: 24 Failed: 0 Time: 1.1min Rate: 2.8s/img
+============================================================

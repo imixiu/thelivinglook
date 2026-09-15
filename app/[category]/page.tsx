@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getArticlesByType } from '@/lib/queries';
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 const categoryLabels: Record<string, string> = {
   'kitchen-hacks': 'Kitchen Hacks',
